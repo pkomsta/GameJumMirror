@@ -8,8 +8,8 @@ public class Basic : MonoBehaviour
     [SerializeField]
     private Transform _floorPointer;
     private NavMeshAgent _navMeshAgent;
-    [SerializeField]
-    private List<Transform> _path;
+   // [SerializeField]
+   // private List<Transform> _path;
     private bool _forwardFlag = true;
     private int _pathIndex = 0;
 
@@ -48,7 +48,7 @@ public class Basic : MonoBehaviour
 
     void Update()
     {
-        FollowPath();
+       // FollowPath();
     }
 
     private void FollowPath()
