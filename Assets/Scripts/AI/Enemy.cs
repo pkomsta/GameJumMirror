@@ -38,9 +38,13 @@ public abstract class Enemy : MonoBehaviour
     public NavMeshAgent navMeshAgent;
     public Transform _floorPointer;
     public List<Transform> _path;
-    public State movement;
+    public int _pathIndex;
+    public bool _forwardFlag;
+    public State patrol;
+    public State chase;
     public State attack;
     public bool HasDeathAnimation = true;
+    public bool canSeePlayer = false;
 
 
 
@@ -76,9 +80,10 @@ public abstract class Enemy : MonoBehaviour
     {
         _animator = this.GetComponent<Animator>();
         _audioSource = GetComponent<AudioSource>();
-
+        _pathIndex = 0;
+        _forwardFlag = true;
         SetNearestTarget();
-        ChangeState(movement);
+        ChangeState(patrol);
     }
 
 

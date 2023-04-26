@@ -16,7 +16,7 @@ public class AttackState : State
         _timeSinceLastAttack += Time.deltaTime;
         if (IsNotInAttackRange(enemy) && _timeSinceLastAttack > enemy.GetAttackCooldown() && !enemy.GetAnimator().GetCurrentAnimatorStateInfo(1).IsName("Attack"))
         {
-            enemy.ChangeState(enemy.movement);
+            enemy.ChangeState(enemy.patrol);
             return;
         }
 
