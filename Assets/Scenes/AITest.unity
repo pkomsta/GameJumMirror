@@ -2782,7 +2782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!136 &1823331350
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2900,13 +2900,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _floorPointer: {fileID: 738335763}
-  _path:
-  - {fileID: 1172173318}
-  - {fileID: 422703724}
-  - {fileID: 1647094933}
-  - {fileID: 757571193}
-  - {fileID: 57404284}
-  - {fileID: 1229345823}
   radius: 8
   angle: 50
   playerRef: {fileID: 0}
