@@ -8,10 +8,9 @@ public class EverySecondEvent : UnityEvent<Enemy>
 {
 
 }
-public abstract class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    public abstract string Name { get; }
-
+    public string Name { get; }
 
 
     [SerializeField] protected AudioClip[] movmentSound;
@@ -35,6 +34,7 @@ public abstract class Enemy : MonoBehaviour
     public event DeathDisplayEventHandler DeathDisplayEvent;
 
     [Header("AI")]
+    [HideInInspector]
     public NavMeshAgent navMeshAgent;
     public Transform _floorPointer;
     public List<Transform> _path;
@@ -46,14 +46,27 @@ public abstract class Enemy : MonoBehaviour
     public bool HasDeathAnimation = true;
     public bool canSeePlayer = false;
 
+    [Header("FOV")]
+    public Light spotLight;
+    public float radius;
+    [Range(0, 360)]
+    public float angle;
+    public LayerMask targetMask;
+    public LayerMask obstructionMask;
+    [HideInInspector]
+    public GameObject playerRef;
 
+
+    [Header("Chase")]
+    [HideInInspector]
+    public Vector3 lastSeenPos;
 
     [Header("Reward Location")]
     public Transform deathDisplayTransform;
 
     protected State currentState;
     //states
-    protected bool IsDead;
+    protected bool IsDead = false;
     private bool KnockedBack = false;
     protected AudioSource _audioSource;
 
@@ -73,19 +86,59 @@ public abstract class Enemy : MonoBehaviour
         _attackValue = loadData.AttackValue;
         _attackRadius = loadData.AttackRadius;
         */
+        currentState = patrol;
 
     }
+
 
     private void Start()
     {
-        _animator = this.GetComponent<Animator>();
-        _audioSource = GetComponent<AudioSource>();
+       // _animator = this.GetComponent<Animator>();
+       // _audioSource = GetComponent<AudioSource>();
         _pathIndex = 0;
         _forwardFlag = true;
-        SetNearestTarget();
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        playerRef = GameManager.Instance.GetPlayer();
         ChangeState(patrol);
+        StartCoroutine(FOVRoutine());
+
     }
 
+    private IEnumerator FOVRoutine()
+    {
+        WaitForSeconds wait = new WaitForSeconds(0.2f);
+
+        while (true)
+        {
+            yield return wait;
+            FieldOfViewCheck();
+        }
+    }
+
+    private void FieldOfViewCheck()
+    {
+        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, radius, targetMask);
+
+        if (rangeChecks.Length != 0)
+        {
+            Transform target = rangeChecks[0].transform;
+            Vector3 directionToTarget = (target.position - transform.position).normalized;
+
+            if (Vector3.Angle(transform.forward, directionToTarget) < angle / 2)
+            {
+                float distanceToTarget = Vector3.Distance(transform.position, target.position);
+
+                if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
+                    canSeePlayer = true;
+                else
+                    canSeePlayer = false;
+            }
+            else
+                canSeePlayer = false;
+        }
+        else if (canSeePlayer)
+            canSeePlayer = false;
+    }
 
     private void Update()
     {
@@ -150,11 +203,6 @@ public abstract class Enemy : MonoBehaviour
     public virtual void DeathEvent()
     {
         Invoke(nameof(DestroyEnemy), 1f);
-    }
-
-    protected virtual void SetNearestTarget()
-    {
-        
     }
 
     public void ChangeState(State newState)

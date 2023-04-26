@@ -7,6 +7,8 @@ public class PatrolState : State
     
     public override void StartState(Enemy enemy)
     {
+        enemy.spotLight.color = Color.green;
+        enemy.navMeshAgent.SetDestination(enemy._path[0].position);
 
     }
 
@@ -18,7 +20,7 @@ public class PatrolState : State
 
             if (enemy._forwardFlag)
             {
-                if(enemy._pathIndex < enemy._path.Count -2)
+                if(enemy._pathIndex < enemy._path.Count -1)
                     enemy._pathIndex++;
                 enemy.navMeshAgent.SetDestination(enemy._path[enemy._pathIndex].position);
                 if (enemy._pathIndex == enemy._path.Count - 1)
@@ -45,6 +47,7 @@ public class PatrolState : State
         {
             enemy.ChangeState(enemy.chase);
         }
+
     }
 
     public override void ExitState(Enemy enemy)
