@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 32749623}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: '##Objects##'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 58513765}
   - component: {fileID: 58513764}
   - component: {fileID: 58513763}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1260,7 +1260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.14
+      value: -3.26
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1349,9 +1349,9 @@ GameObject:
   - component: {fileID: 648058810}
   - component: {fileID: 648058809}
   - component: {fileID: 648058813}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1479,6 +1479,37 @@ MonoBehaviour:
       m_Calls: []
   _audioSourceMove: {fileID: 0}
   _audioSourceAction: {fileID: 0}
+--- !u!1 &738335762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 738335763}
+  m_Layer: 0
+  m_Name: FloorPointer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &738335763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738335762}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1823331353}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &757571193 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
@@ -1930,7 +1961,7 @@ GameObject:
   - component: {fileID: 1161850888}
   - component: {fileID: 1161850887}
   - component: {fileID: 1161850886}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2037,7 +2068,7 @@ GameObject:
   - component: {fileID: 1335258023}
   - component: {fileID: 1335258022}
   - component: {fileID: 1335258021}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2459,7 +2490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.28
+      value: -2.18
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2597,12 +2628,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823331349}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.21, y: 1, z: -2.31}
+  m_LocalPosition: {x: -1.88, y: 1, z: -2.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 404905937}
   - {fileID: 1109433178}
+  - {fileID: 738335763}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2616,7 +2648,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5000001
-  m_Speed: 3.5
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -2640,8 +2672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19213ca4d80873f429674fd17bc1706f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spotlight: {fileID: 1109433180}
-  currentTarget: {fileID: 0}
+  _floorPointer: {fileID: 738335763}
   _path:
   - {fileID: 1172173318}
   - {fileID: 422703724}
@@ -2649,7 +2680,16 @@ MonoBehaviour:
   - {fileID: 757571193}
   - {fileID: 57404284}
   - {fileID: 1229345823}
-  _forwardFlag: 1
+  radius: 8
+  angle: 54
+  playerRef: {fileID: 0}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 64
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 128
+  canSeePlayer: 0
 --- !u!54 &1823331356
 Rigidbody:
   m_ObjectHideFlags: 0
