@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemy : MonoBehaviour
+public class Basic : MonoBehaviour
 {
     [SerializeField]
     private Transform _floorPointer;
