@@ -9,7 +9,7 @@ public class Basic : MonoBehaviour
     private Transform _floorPointer;
     private NavMeshAgent _navMeshAgent;
    // [SerializeField]
-   // private List<Transform> _path;
+    private List<Transform> _path;
     private bool _forwardFlag = true;
     private int _pathIndex = 0;
 
