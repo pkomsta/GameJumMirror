@@ -57,11 +57,6 @@ public class Enemy : MonoBehaviour
     public LayerMask targetMask;
     public LayerMask obstructionMask;
     */
-    [Header("Cone Color Materials")]
-    public Material matGreen;
-    public Material matYellow;
-    public Material matRed;
-
 
     [HideInInspector]
     public GameObject playerRef;

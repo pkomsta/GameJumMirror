@@ -604,9 +604,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58510502}
     m_Modifications:
-    - target: {fileID: 2190208037085007891, guid: ea735f485522446478869812158c4627, type: 3}
-      propertyPath: m_Name
-      value: Settings
+    - target: {fileID: 1874863427, guid: ea735f485522446478869812158c4627, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874863427, guid: ea735f485522446478869812158c4627, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874863427, guid: ea735f485522446478869812158c4627, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874863427, guid: ea735f485522446478869812158c4627, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874863427, guid: ea735f485522446478869812158c4627, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874863427, guid: ea735f485522446478869812158c4627, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7581269916090891370, guid: ea735f485522446478869812158c4627, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
