@@ -40,12 +40,15 @@ public class Enemy : MonoBehaviour
     public List<Transform> _path;
     public int _pathIndex;
     public bool _forwardFlag;
+    //states
     public State patrol;
     public State chase;
     public State attack;
     public bool HasDeathAnimation = true;
+    [HideInInspector]
     public bool canSeePlayer = false;
 
+    /*
     [Header("FOV")]
     public Light spotLight;
     public float radius;
@@ -53,6 +56,13 @@ public class Enemy : MonoBehaviour
     public float angle;
     public LayerMask targetMask;
     public LayerMask obstructionMask;
+    */
+    [Header("Cone Color Materials")]
+    public Material matGreen;
+    public Material matYellow;
+    public Material matRed;
+
+
     [HideInInspector]
     public GameObject playerRef;
 
@@ -65,10 +75,11 @@ public class Enemy : MonoBehaviour
     public Transform deathDisplayTransform;
 
     protected State currentState;
-    //states
     protected bool IsDead = false;
-    private bool KnockedBack = false;
     protected AudioSource _audioSource;
+    [HideInInspector]
+    public MMConeOfVision coneOfVision;
+
 
     public static readonly int _walk = Animator.StringToHash("Walk");
     public static readonly int AAttack = Animator.StringToHash("Attack");
@@ -86,6 +97,8 @@ public class Enemy : MonoBehaviour
         _attackValue = loadData.AttackValue;
         _attackRadius = loadData.AttackRadius;
         */
+
+        coneOfVision = GetComponent<MMConeOfVision>();
         currentState = patrol;
 
     }
@@ -100,10 +113,11 @@ public class Enemy : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         playerRef = GameManager.Instance.GetPlayer();
         ChangeState(patrol);
-        StartCoroutine(FOVRoutine());
+        //StartCoroutine(FOVRoutine());
 
     }
 
+    /* Old way of finding player
     private IEnumerator FOVRoutine()
     {
         WaitForSeconds wait = new WaitForSeconds(0.2f);
@@ -139,7 +153,7 @@ public class Enemy : MonoBehaviour
         else if (canSeePlayer)
             canSeePlayer = false;
     }
-
+    */
     private void Update()
     {
 

@@ -40,12 +40,15 @@ using System;
         public float VisionRadius = 5f;
         [Range(0f, 360f)]
         public float VisionAngle = 20f;
-    public Vector3 Direction;
+        public Vector3 Direction;
+        public Vector3 EulerAngles;
+        public Vector3 Offset;
+        [HideInInspector]
+        public float VisionRadiusSmall;
+        [HideInInspector]
+        public float VisionRadiusBig;
 
-    public Vector3 EulerAngles;
-    public Vector3 Offset;
-        
-        [Header("Target scanning")]
+    [Header("Target scanning")]
         public bool ShouldScanForTargets = true;
         public LayerMask TargetMask;
         public float ScanFrequencyInSeconds = 1f;
@@ -59,6 +62,8 @@ using System;
         public float EdgeThreshold = 0.5f;
 
         public MeshFilter VisionMeshFilter;
+        public MeshRenderer MeshRenderer;
+        public List<Material> Materials;
         protected Mesh _visionMesh;
         protected Collider[] _targetsWithinDistance; 
         protected Transform _target;
@@ -75,19 +80,24 @@ using System;
         protected RaycastData _returnRaycastData;
         protected RaycastHit _raycastAtAngleHit;
         protected int _numberOfVerticesLastTime = 0;
-
+        
         public Vector3 Center { get { return this.transform.position + Offset;  } }
 
+        private Enemy enemy;
         protected virtual void Awake()
         {
+            enemy = GetComponent<Enemy>();
             _visionMesh = new Mesh();
             if (ShouldDrawMesh)
             {
                 VisionMeshFilter.mesh = _visionMesh;    
             }
-        }
+            VisionRadiusSmall = VisionRadius;
+            VisionRadiusBig = VisionRadius*2;
 
-        protected virtual void LateUpdate()
+    }
+
+    protected virtual void LateUpdate()
         {
             if ((Time.time - _lastScanTimestamp > ScanFrequencyInSeconds) && ShouldScanForTargets)
             {
@@ -108,8 +118,9 @@ using System;
         _lastScanTimestamp = Time.time;
         VisibleTargets.Clear();
         _targetsWithinDistance = Physics.OverlapSphere(Center, VisionRadius, TargetMask);
-        foreach (Collider collider in _targetsWithinDistance)
+        if (_targetsWithinDistance.Length != 0)
         {
+            Collider collider = _targetsWithinDistance[0];
             _target = collider.transform;
             _directionToTarget = (_target.position - Center).normalized;
             if (Vector3.Angle(Direction, _directionToTarget) < VisionAngle / 2f)
@@ -128,10 +139,23 @@ using System;
                 if ((!Physics.Raycast(Center, _directionToTarget, _distanceToTarget, ObstacleMask)) && !duplicate)
                 {
                     VisibleTargets.Add(_target);
+                    enemy.canSeePlayer = true;
                     Debug.Log("Target added");
 
                 }
+                else
+                {
+                    enemy.canSeePlayer = false;
+                }
             }
+            else
+            {
+                enemy.canSeePlayer = false;
+            }
+        }
+        else if (enemy.canSeePlayer)
+        {
+            enemy.canSeePlayer = false;
         }
     }
 

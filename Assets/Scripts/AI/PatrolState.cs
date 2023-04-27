@@ -7,9 +7,9 @@ public class PatrolState : State
     
     public override void StartState(Enemy enemy)
     {
-        enemy.spotLight.color = Color.green;
+        enemy.coneOfVision.MeshRenderer.material = enemy.coneOfVision.Materials[0];
         enemy.navMeshAgent.SetDestination(enemy._path[0].position);
-
+        enemy.coneOfVision.VisionRadius = enemy.coneOfVision.VisionRadiusSmall;
     }
 
     public override void UpdateState(Enemy enemy)
