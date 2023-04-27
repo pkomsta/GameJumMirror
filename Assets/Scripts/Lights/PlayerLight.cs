@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class PlayerLight : MonoBehaviour
 {
     [SerializeField] float maxIntensity = 1500;
-    [SerializeField] float intensityTakenPerTick = 1f;
+    public float intensityTakenPerTick = 1f;
     private float currentIntensity = 0;
     public float flicerStrength = 0.75f;
     public float flickerSpeed = 0.1f;
@@ -32,7 +32,7 @@ public class PlayerLight : MonoBehaviour
             float randomIntensity = Random.Range(currentIntensity * flicerStrength, currentIntensity);
             pointLight.intensity = randomIntensity;
            
-            currentIntensity -= intensityTakenPerTick;
+            
             if(currentIntensity < 0)
             {
                 OnLightFadeed?.Invoke();

@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxIntensity: 100
-  intensityTakenPerTick: 0.1
+  intensityTakenPerTick: 0.5
   flicerStrength: 0.75
   flickerSpeed: 0.25
   pointLight: {fileID: 1433077323061843916}

@@ -53,7 +53,7 @@ public class IsometricCharacterController : MonoBehaviour
         {
             return;
         }
-        if(playerLight.GetCurrentIntensity() < 0f)
+        if(playerLight.GetCurrentIntensity() <= 0f)
         {
             _isDead= true;
             return;
@@ -71,7 +71,7 @@ public class IsometricCharacterController : MonoBehaviour
     }
     private void RunEverySecondEvent()
     {
-
+        playerLight.ChangeCurrentIntensity(_isSprinting ? -playerLight.intensityTakenPerTick*3f : -playerLight.intensityTakenPerTick);
         EverySecond?.Invoke();
     }
     private void InitializeEvents()
