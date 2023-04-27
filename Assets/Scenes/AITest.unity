@@ -1350,6 +1350,7 @@ GameObject:
   - component: {fileID: 648058809}
   - component: {fileID: 648058813}
   - component: {fileID: 648058814}
+  - component: {fileID: 648058815}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -1451,9 +1452,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 8
+  TurnSpeed: 5
   backwardsMovmentPenalty: 0.7
-  Hp: 100
-  _kindlingHolder: {fileID: 0}
+  sprintMultiplyer: 2
   _walkSound: {fileID: 0}
   _collectItem: {fileID: 0}
   _dashSound: {fileID: 0}
@@ -1496,6 +1497,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &648058815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648058808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9a4928dd8f67244a46a9241936c56d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxIntensity: 100
+  intensityTakenPerTick: 1
+  flicerStrength: 0.75
+  flickerSpeed: 0.1
+  pointLight: {fileID: 1859548245}
+  OnLightFadeed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &715883384
 GameObject:
   m_ObjectHideFlags: 0

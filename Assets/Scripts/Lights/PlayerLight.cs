@@ -31,7 +31,7 @@ public class PlayerLight : MonoBehaviour
         {
             float randomIntensity = Random.Range(currentIntensity * flicerStrength, currentIntensity);
             pointLight.intensity = randomIntensity;
-            Debug.Log("Current intensity: " + pointLight.intensity);
+           
             currentIntensity -= intensityTakenPerTick;
             if(currentIntensity < 0)
             {
