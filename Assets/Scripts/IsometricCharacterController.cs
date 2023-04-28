@@ -168,15 +168,23 @@ public class IsometricCharacterController : MonoBehaviour
                 inputMovement = MathF.Abs(angle) > 100 ? inputMovement.normalized * Speed * backwardsMovmentPenalty * Time.deltaTime : inputMovement.normalized * Speed* sprintMultiplyer * Time.deltaTime;
                 currentMoveSpeed = MathF.Abs(angle) > 100 ? Speed * backwardsMovmentPenalty : Speed*sprintMultiplyer;
                 int runningStateHash = Animator.StringToHash("Base Layer.Running");
-                _animator.SetBool("IsRunning", true);
-                _animator.SetBool("IsWalking", false);
+                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Running"))
+                {
+                    _animator.CrossFade("Running", 0.2f);
+
+                }
             }
             else
             {
                 inputMovement = MathF.Abs(angle) > 100 ? inputMovement.normalized * Speed * backwardsMovmentPenalty * Time.deltaTime : inputMovement.normalized * Speed * Time.deltaTime;
                 currentMoveSpeed = MathF.Abs(angle) > 100 ? Speed * backwardsMovmentPenalty : Speed;
-                _animator.SetBool("IsWalking", true);
-                _animator.SetBool("IsRunning", false);
+                // _animator.SetBool("IsWalking", true);
+                //  _animator.SetBool("IsRunning", false);
+                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk"))
+                {
+                    _animator.CrossFade("Walk", 0.2f);
+
+                }
             }
             
 
@@ -204,11 +212,12 @@ public class IsometricCharacterController : MonoBehaviour
             {
               //  SoundManager.Instance.StopOnGivenAudioSource(_audioSourceMove);
                 OnStopMoving?.Invoke();
-                if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+
+                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Idle"))
                 {
-                    return;
+                    _animator.CrossFade("Idle", 0.2f);
+
                 }
-                
                 _animator.SetBool("IsWalking", false);
                 _animator.SetBool("IsRunning", false);
             }
