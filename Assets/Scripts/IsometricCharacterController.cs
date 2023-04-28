@@ -36,7 +36,7 @@ public class IsometricCharacterController : MonoBehaviour
     PickupObject closestPickUp;
 
     private bool _inMove;
-    private bool _isDead;
+    private bool _isDead = false;
     private bool _isSprinting;
     float currentMoveSpeed = 0f;
     private void Start()
@@ -60,7 +60,13 @@ public class IsometricCharacterController : MonoBehaviour
             _isDead= true;
             return;
         }
-
+        if(_isDead)
+        {
+            _animator.SetBool("IsWalking", false);
+            _animator.SetBool("IsRunning", false);
+            _animator.CrossFade("Death",0.5f);
+            
+        }
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -161,11 +167,16 @@ public class IsometricCharacterController : MonoBehaviour
             {
                 inputMovement = MathF.Abs(angle) > 100 ? inputMovement.normalized * Speed * backwardsMovmentPenalty * Time.deltaTime : inputMovement.normalized * Speed* sprintMultiplyer * Time.deltaTime;
                 currentMoveSpeed = MathF.Abs(angle) > 100 ? Speed * backwardsMovmentPenalty : Speed*sprintMultiplyer;
+                int runningStateHash = Animator.StringToHash("Base Layer.Running");
+                _animator.SetBool("IsRunning", true);
+                _animator.SetBool("IsWalking", false);
             }
             else
             {
                 inputMovement = MathF.Abs(angle) > 100 ? inputMovement.normalized * Speed * backwardsMovmentPenalty * Time.deltaTime : inputMovement.normalized * Speed * Time.deltaTime;
                 currentMoveSpeed = MathF.Abs(angle) > 100 ? Speed * backwardsMovmentPenalty : Speed;
+                _animator.SetBool("IsWalking", true);
+                _animator.SetBool("IsRunning", false);
             }
             
 
@@ -173,13 +184,17 @@ public class IsometricCharacterController : MonoBehaviour
             Vector3 rotatedMovement = rotation * inputMovement;
 
            // SoundManager.Instance.PlayOnGivenAudioSource(_audioSourceMove, _walkSound);
-            _inMove = true;
+            
 
             transform.Translate(inputMovement, Space.World);
 
-           // _animator.SetFloat("InputAngle", angle);
+
+            
+
+            _inMove = true;
+            // _animator.SetFloat("InputAngle", angle);
             //_animator.SetFloat("MoveSpeed", currentMoveSpeed / Speed);
-           
+
 
 
         }
@@ -189,15 +204,22 @@ public class IsometricCharacterController : MonoBehaviour
             {
               //  SoundManager.Instance.StopOnGivenAudioSource(_audioSourceMove);
                 OnStopMoving?.Invoke();
+                if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+                {
+                    return;
+                }
+                
+                _animator.SetBool("IsWalking", false);
+                _animator.SetBool("IsRunning", false);
             }
             _inMove = false;
-
-          //  _animator.Play(PlayerAnimationConst.IDLE, 1); //Set legs layer to idle state
+            
+            //  _animator.Play(PlayerAnimationConst.IDLE, 1); //Set legs layer to idle state
 
             //_animator.SetFloat("InputAngle", angle);
-           // _animator.SetFloat("Speed", 0f);
+            // _animator.SetFloat("Speed", 0f);
 
-            
+
         }
 
     }
