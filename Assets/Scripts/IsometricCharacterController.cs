@@ -17,6 +17,8 @@ public class IsometricCharacterController : MonoBehaviour
     [SerializeField] private AudioClip[] _deathSound;
     [SerializeField] private AudioClip[] _takeDamageSound;
     [SerializeField] private float _pickUpRadius = 5f;
+    [SerializeField] Transform CameraObject;
+    [SerializeField] private float rotationSpeed = 2f;
     private PlayerLight playerLight;
   
     public UnityEvent OnStartMoving;
@@ -65,9 +67,23 @@ public class IsometricCharacterController : MonoBehaviour
         PickUp();
         MoveWASD();
         Look(ray);
+        
 
 
+    }
 
+    private void LateUpdate()
+    {
+        if (_isDead)
+        {
+            return;
+        }
+        if (playerLight.GetCurrentIntensity() <= 0f)
+        {
+            _isDead = true;
+            return;
+        }
+       // RotateCamera();
     }
     private void RunEverySecondEvent()
     {
@@ -82,6 +98,29 @@ public class IsometricCharacterController : MonoBehaviour
         if (OnUseItem == null) OnUseItem = new UnityEvent();
         if (EverySecond == null) EverySecond = new UnityEvent();
 
+    }
+    private void RotateCamera()
+    {
+        if (Input.GetKey(KeyCode.Q))
+        {
+            float rotateAmount = rotationSpeed;
+
+            // Calculate the new Y rotation of the virtual camera
+            float yRotation = CameraObject.transform.localEulerAngles.y + rotateAmount;
+
+            // Apply the new rotation to the virtual camera, while keeping its X and Z rotation values
+            CameraObject.transform.localEulerAngles = new Vector3(60, yRotation, 0);
+        }
+        else if(Input.GetKey(KeyCode.E))
+        {
+            float rotateAmount = -rotationSpeed;
+
+            // Calculate the new Y rotation of the virtual camera
+            float yRotation = CameraObject.transform.localEulerAngles.y + rotateAmount;
+
+            // Apply the new rotation to the virtual camera, while keeping its X and Z rotation values
+            CameraObject.transform.localEulerAngles = new Vector3(60, yRotation, 0);
+        }
     }
     private void Look(Ray ray)
     {
