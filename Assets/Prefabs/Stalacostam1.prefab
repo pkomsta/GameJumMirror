@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1720276876199778998}
   - component: {fileID: 2337505787816695059}
   - component: {fileID: 546213638213149145}
+  - component: {fileID: 8796214163094773767}
   m_Layer: 0
   m_Name: Stalacostam1
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8796214163094773767
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059400778346692620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024301354, y: 0.02430135, z: 0.02675606}
+  m_Center: {x: -4.656613e-10, y: 4.656612e-10, z: 0.013723664}
