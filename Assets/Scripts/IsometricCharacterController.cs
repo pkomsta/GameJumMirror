@@ -52,6 +52,12 @@ public class IsometricCharacterController : MonoBehaviour
     public Vector3 Offset;
     public Vector3 Center { get { return this.transform.position + Offset; } }
 
+    private void Awake()
+    {
+        playerLight= this.GetComponent<PlayerLight>();
+
+    }
+
     private void Start()
     {
         InitializeEvents();
@@ -59,7 +65,6 @@ public class IsometricCharacterController : MonoBehaviour
         _animator = this.GetComponent<Animator>();
 
         InvokeRepeating(nameof(RunEverySecondEvent), 0, 1f);
-        playerLight= this.GetComponent<PlayerLight>();
         MirrorPointLight.range = MirrorRadius *1.25f;
 
     }
@@ -88,7 +93,7 @@ public class IsometricCharacterController : MonoBehaviour
        
         PickUp();
         MoveWASD();
-        Look(ray);
+        //Look(ray);
         UseMirror();
 
 
@@ -298,6 +303,7 @@ public class IsometricCharacterController : MonoBehaviour
         {
             if (MirrorUsesLeft < 1)
                 return;
+            MirrorMeter.instance.ChangeMirrorUI();
             MirrorPointLight.intensity = LightMaxIntensity;
             MirrorUsesLeft--;
             StartCoroutine(DimMirrorLigth());
@@ -332,7 +338,6 @@ public class IsometricCharacterController : MonoBehaviour
         while(MirrorPointLight.intensity > 0.1f)
         {
             MirrorPointLight.intensity = Mathf.Clamp(MirrorPointLight.intensity - LightIntensityDecrease, 0f, LightMaxIntensity);
-            //MirrorPointLight.intensity -= LightIntensityDecrease;
             yield return new WaitForSeconds(LightDimTime);
         }
         
@@ -341,6 +346,7 @@ public class IsometricCharacterController : MonoBehaviour
     public void TakeHit(float value)
     {
         playerLight.ChangeCurrentIntensity(-value);
+
     }
     public void IncreaseLightIntensity(float value)
     {

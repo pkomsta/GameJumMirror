@@ -77,6 +77,8 @@ public class Enemy : MonoBehaviour
     protected AudioSource _audioSource;
     [HideInInspector]
     public MMConeOfVision coneOfVision;
+    [HideInInspector]
+    public State previousState;
 
 
     public static readonly int _walk = Animator.StringToHash("Walk");

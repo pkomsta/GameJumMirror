@@ -8,7 +8,8 @@ public class PlayerLight : MonoBehaviour
 {
     [SerializeField] float maxIntensity = 1500;
     public float intensityTakenPerTick = 1f;
-    private float currentIntensity = 0;
+    [HideInInspector]
+    public float currentIntensity = 0;
     public float flicerStrength = 0.75f;
     public float flickerSpeed = 0.1f;
     [SerializeField] Light pointLight;
@@ -17,6 +18,7 @@ public class PlayerLight : MonoBehaviour
     void Start()
     {
         currentIntensity = maxIntensity;
+        LightMeter.instance.SetMaxItensity(maxIntensity);
         StartCoroutine(Flicker());
     }
 
@@ -55,6 +57,7 @@ public class PlayerLight : MonoBehaviour
     public void ChangeCurrentIntensity(float value)
     {
         currentIntensity = Mathf.Clamp(currentIntensity+value,0f,maxIntensity);
+        LightMeter.instance.SetLightState(currentIntensity);
     }
 
 }
