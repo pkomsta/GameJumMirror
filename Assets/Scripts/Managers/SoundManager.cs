@@ -97,6 +97,8 @@ public class SoundManager : MonoBehaviour
         masterVolume = master;
         effectVolume = effect;
         musicVolume = music;
+
+        VolumeChanged();
     }
     IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
     {

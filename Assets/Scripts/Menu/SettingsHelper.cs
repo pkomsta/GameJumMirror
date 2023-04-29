@@ -10,6 +10,17 @@ public class SettingsHelper : MonoBehaviour
 
     void Start()
     {
+       // MasterVolume.value = SoundManager.Instance.masterVolume;
+       // EffectVolume.value = SoundManager.Instance.effectVolume;
+       // MusicVolume.value = SoundManager.Instance.musicVolume;
+
+      //  MasterVolume.GetComponent<SliderText>().SetTextBySlider(MasterVolume);
+      //  EffectVolume.GetComponent<SliderText>().SetTextBySlider(EffectVolume);
+      //  MusicVolume.GetComponent<SliderText>().SetTextBySlider(MusicVolume);
+    }
+
+    private void OnEnable()
+    {
         MasterVolume.value = SoundManager.Instance.masterVolume;
         EffectVolume.value = SoundManager.Instance.effectVolume;
         MusicVolume.value = SoundManager.Instance.musicVolume;

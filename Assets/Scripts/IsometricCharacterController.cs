@@ -55,7 +55,9 @@ public class IsometricCharacterController : MonoBehaviour
         {
             return;
         }
-        if(playerLight.GetCurrentIntensity() <= 0f)
+        if (GameManager.Instance.isGamePaused)
+            return;
+        if (playerLight.GetCurrentIntensity() <= 0f)
         {
             _isDead= true;
             return;
@@ -69,7 +71,7 @@ public class IsometricCharacterController : MonoBehaviour
         }
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
+       
         PickUp();
         MoveWASD();
         Look(ray);

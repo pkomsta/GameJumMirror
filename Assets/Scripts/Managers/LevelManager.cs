@@ -9,6 +9,12 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public static void LoadMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public static void ExitGame()
     {
         Application.Quit();
