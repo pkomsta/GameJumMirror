@@ -37,9 +37,14 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public NavMeshAgent navMeshAgent;
     public Transform _floorPointer;
-    public List<Transform> _path;
+    public GameObject PathHeader;
+    [HideInInspector]
     public int _pathIndex;
+    [HideInInspector]
     public bool _forwardFlag;
+
+    [HideInInspector]
+    public List<Transform> _path;
     //states
     public State patrol;
     public State chase;
@@ -97,7 +102,7 @@ public class Enemy : MonoBehaviour
         _attackValue = loadData.AttackValue;
         _attackRadius = loadData.AttackRadius;
         */
-
+        CreatePath();
         coneOfVision = GetComponent<MMConeOfVision>();
         currentState = patrol;
 
@@ -154,9 +159,17 @@ public class Enemy : MonoBehaviour
             canSeePlayer = false;
     }
     */
-    private void Update()
-    {
 
+    private void CreatePath()
+    {
+        Transform[] pathPointers =  GetComponentsInChildren<Transform>();
+        foreach(Transform tr in pathPointers)
+        {
+            if(tr != PathHeader.transform)
+            {
+                _path.Add(tr);
+            }
+        }
     }
 
     private void LateUpdate()
