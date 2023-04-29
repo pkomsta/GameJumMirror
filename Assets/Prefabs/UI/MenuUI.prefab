@@ -561,6 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc12ffb339abe2a4ca4d1d89e8f2e9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 606879492}
 --- !u!1 &783115821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,6 +1175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc12ffb339abe2a4ca4d1d89e8f2e9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 1205548681}
 --- !u!1 &1294821639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,6 +1776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc12ffb339abe2a4ca4d1d89e8f2e9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 1973112014}
 --- !u!1 &2190208037085007891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,18 +2452,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: HoverSelect, Assembly-CSharp
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   - eventID: 4
     callback:
       m_PersistentCalls:
@@ -2468,6 +2459,18 @@ MonoBehaviour:
         - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
           m_MethodName: LoadNextLevel
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7581269916800387910}
+          m_TargetAssemblyTypeName: HoverSelect, Assembly-CSharp
+          m_MethodName: HideStroke
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
