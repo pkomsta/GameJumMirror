@@ -170,10 +170,13 @@ public class IsometricCharacterController : MonoBehaviour
                 inputMovement = MathF.Abs(angle) > 100 ? inputMovement.normalized * Speed * backwardsMovmentPenalty * Time.deltaTime : inputMovement.normalized * Speed* sprintMultiplyer * Time.deltaTime;
                 currentMoveSpeed = MathF.Abs(angle) > 100 ? Speed * backwardsMovmentPenalty : Speed*sprintMultiplyer;
                 int runningStateHash = Animator.StringToHash("Base Layer.Running");
-                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Running"))
+                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Running") && currentMoveSpeed > Speed)
                 {
                     _animator.CrossFade("Running", 0.1f);
 
+                }else if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk"))
+                {
+                    _animator.CrossFade("Walk", 0.1f);
                 }
             }
             else
