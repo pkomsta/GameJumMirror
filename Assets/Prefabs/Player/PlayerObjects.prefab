@@ -320,7 +320,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1380149253945799858, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_ShadowNearPlane
-      value: 1.25
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380149253945799858, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_UseContactShadow.m_Override
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1433077324000146464, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_Radius
@@ -388,11 +392,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2925147144175900704, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.07
+      value: 2.12
       objectReference: {fileID: 0}
     - target: {fileID: 2925147144175900704, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.22
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2925147144175900704, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9417057
+      objectReference: {fileID: 0}
+    - target: {fileID: 2925147144175900704, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.33643788
+      objectReference: {fileID: 0}
+    - target: {fileID: 2925147144175900704, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 39.32
       objectReference: {fileID: 0}
     - target: {fileID: 5989800017866524803, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_RootOrder
@@ -400,7 +416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6026741924358877541, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_Intensity
-      value: 62.72487
+      value: 31.362434
       objectReference: {fileID: 0}
     - target: {fileID: 6026741924358877541, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_SpotAngle
@@ -414,9 +430,25 @@ PrefabInstance:
       propertyPath: m_Shadows.m_Type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6026741924358877541, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 8329
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345500493553966522, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946707683357352852, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8009640719945803673, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_Intensity
-      value: 30
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009640719945803673, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_InnerSpotPercent
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8009640719945803673, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_CustomSpotLightShadowCone
