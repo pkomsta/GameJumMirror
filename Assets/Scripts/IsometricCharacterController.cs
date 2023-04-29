@@ -39,6 +39,19 @@ public class IsometricCharacterController : MonoBehaviour
     private bool _isDead = false;
     private bool _isSprinting;
     float currentMoveSpeed = 0f;
+
+    [Header("Mirror")]
+    public Light MirrorPointLight;
+    public float LightMaxIntensity = 200;
+    public float LightIntensityDecrease = 200;
+    public float LightDimTime = 0.1f;
+    public int MirrorUsesLeft = 4;
+    public float MirrorStunTime = 3;
+    public float MirrorRadius;
+    public LayerMask TargetMask;
+    public Vector3 Offset;
+    public Vector3 Center { get { return this.transform.position + Offset; } }
+
     private void Start()
     {
         InitializeEvents();
@@ -47,6 +60,7 @@ public class IsometricCharacterController : MonoBehaviour
 
         InvokeRepeating(nameof(RunEverySecondEvent), 0, 1f);
         playerLight= this.GetComponent<PlayerLight>();
+        MirrorPointLight.range = MirrorRadius *1.25f;
 
     }
     private void Update()
@@ -75,7 +89,7 @@ public class IsometricCharacterController : MonoBehaviour
         PickUp();
         MoveWASD();
         Look(ray);
-        
+        UseMirror();
 
 
     }
@@ -206,7 +220,7 @@ public class IsometricCharacterController : MonoBehaviour
 
             _inMove = true;
             _animator.SetFloat("InputAngle", angle);
-            Debug.Log("Angle: " + angle);
+            //Debug.Log("Angle: " + angle);
             //_animator.SetFloat("MoveSpeed", currentMoveSpeed / Speed);
 
 
@@ -275,6 +289,53 @@ public class IsometricCharacterController : MonoBehaviour
         }
 
         closestPickUp = null;
+    }
+
+    void UseMirror()
+    {
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (MirrorUsesLeft < 1)
+                return;
+            MirrorPointLight.intensity = LightMaxIntensity;
+            MirrorUsesLeft--;
+            StartCoroutine(DimMirrorLigth());
+            Collider[] _targetsWithinDistance;
+            _targetsWithinDistance = Physics.OverlapSphere(Center, MirrorRadius, TargetMask);
+            
+            if (_targetsWithinDistance.Length == 0)
+                return;
+
+            foreach(Collider target in _targetsWithinDistance)
+            {
+                Enemy enemy = target.GetComponent<Enemy>();
+                if(enemy != null)
+                {
+                    enemy.stunTime = MirrorStunTime;
+                    enemy.ChangeState(enemy.stun);
+                }
+            }
+            
+        }
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, MirrorRadius);
+    }
+
+    IEnumerator DimMirrorLigth()
+    {
+        while(MirrorPointLight.intensity > 0.1f)
+        {
+            MirrorPointLight.intensity = Mathf.Clamp(MirrorPointLight.intensity - LightIntensityDecrease, 0f, LightMaxIntensity);
+            //MirrorPointLight.intensity -= LightIntensityDecrease;
+            yield return new WaitForSeconds(LightDimTime);
+        }
+        
     }
 
     public void TakeHit(float value)

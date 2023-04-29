@@ -44,6 +44,7 @@ public class Enemy : MonoBehaviour
     public State patrol;
     public State chase;
     public State attack;
+    public State stun;
     public bool HasDeathAnimation = true;
     [HideInInspector]
     public bool canSeePlayer = false;
@@ -61,6 +62,8 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public GameObject playerRef;
 
+    [HideInInspector]
+    public float stunTime = 3f;
 
     [Header("Chase")]
     [HideInInspector]

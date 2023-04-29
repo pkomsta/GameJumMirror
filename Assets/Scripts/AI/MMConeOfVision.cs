@@ -80,12 +80,15 @@ using System;
         protected RaycastData _returnRaycastData;
         protected RaycastHit _raycastAtAngleHit;
         protected int _numberOfVerticesLastTime = 0;
+
+
         
         public Vector3 Center { get { return this.transform.position + Offset;  } }
 
         private Enemy enemy;
         protected virtual void Awake()
         {
+           
             enemy = GetComponent<Enemy>();
             _visionMesh = new Mesh();
             if (ShouldDrawMesh)
@@ -99,6 +102,8 @@ using System;
 
     protected virtual void LateUpdate()
         {
+         
+
             if ((Time.time - _lastScanTimestamp > ScanFrequencyInSeconds) && ShouldScanForTargets)
             {
                 ScanForTargets();
