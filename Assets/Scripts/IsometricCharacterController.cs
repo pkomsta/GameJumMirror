@@ -172,7 +172,7 @@ public class IsometricCharacterController : MonoBehaviour
                 int runningStateHash = Animator.StringToHash("Base Layer.Running");
                 if (!_animator.GetNextAnimatorStateInfo(0).IsName("Running"))
                 {
-                    _animator.CrossFade("Running", 0.2f);
+                    _animator.CrossFade("Running", 0.1f);
 
                 }
             }
@@ -184,7 +184,7 @@ public class IsometricCharacterController : MonoBehaviour
                 //  _animator.SetBool("IsRunning", false);
                 if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk"))
                 {
-                    _animator.CrossFade("Walk", 0.2f);
+                    _animator.CrossFade("Walk", 0.1f);
 
                 }
             }
@@ -202,7 +202,8 @@ public class IsometricCharacterController : MonoBehaviour
             
 
             _inMove = true;
-            // _animator.SetFloat("InputAngle", angle);
+            _animator.SetFloat("InputAngle", angle);
+            Debug.Log("Angle: " + angle);
             //_animator.SetFloat("MoveSpeed", currentMoveSpeed / Speed);
 
 
@@ -217,7 +218,7 @@ public class IsometricCharacterController : MonoBehaviour
 
                 if (!_animator.GetNextAnimatorStateInfo(0).IsName("Idle"))
                 {
-                    _animator.CrossFade("Idle", 0.2f);
+                    _animator.CrossFade("Idle", 0.1f);
 
                 }
                 _animator.SetBool("IsWalking", false);
