@@ -170,18 +170,8 @@ public class IsometricCharacterController : MonoBehaviour
             {
                 inputMovement = MathF.Abs(angle) > 100 ? inputMovement.normalized * Speed * backwardsMovmentPenalty * Time.deltaTime : inputMovement.normalized * Speed* sprintMultiplyer * Time.deltaTime;
                 currentMoveSpeed = MathF.Abs(angle) > 100 ? Speed * backwardsMovmentPenalty : Speed*sprintMultiplyer;
-                int runningStateHash = Animator.StringToHash("Base Layer.Running");
-                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Running"))
-                {
-                    _animator.CrossFade("Running", 0.2f);
-
-                }
-                else
-                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk") && currentMoveSpeed < Speed)
-                {
-                    _animator.CrossFade("Walk", 0.1f);
-
-                }
+     
+               
             }
             else
             {
@@ -189,13 +179,20 @@ public class IsometricCharacterController : MonoBehaviour
                 currentMoveSpeed = MathF.Abs(angle) > 100 ? Speed * backwardsMovmentPenalty : Speed;
                 // _animator.SetBool("IsWalking", true);
                 //  _animator.SetBool("IsRunning", false);
-                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk"))
-                {
-                    _animator.CrossFade("Walk", 0.2f);
-
-                }
+                
             }
-            
+
+            if (!_animator.GetNextAnimatorStateInfo(0).IsName("Running") && currentMoveSpeed > Speed)
+            {
+                _animator.CrossFade("Running", 0.1f);
+
+            }
+            else
+               if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk") && currentMoveSpeed <= Speed)
+            {
+                _animator.CrossFade("Walk", 0.1f);
+
+            }
 
             Quaternion rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
             Vector3 rotatedMovement = rotation * inputMovement;
