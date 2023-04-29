@@ -49,11 +49,11 @@ PrefabInstance:
       objectReference: {fileID: 5123856537590461341}
     - target: {fileID: 6250103164325306576, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
       propertyPath: m_Lens.FarClipPlane
-      value: 5000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 6250103164325306576, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
       propertyPath: m_Lens.NearClipPlane
-      value: 0.1
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6250103164325306577, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
       propertyPath: m_Name
@@ -130,6 +130,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6250103164325306607, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
   m_PrefabInstance: {fileID: 1272068885984868142}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5123856538507925503 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6250103164325306577, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
+  m_PrefabInstance: {fileID: 1272068885984868142}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &597461164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123856538507925503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e501d18bb52cf8c40b1853ca4904654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CollideAgainst:
+    serializedVersion: 2
+    m_Bits: 128
+  m_IgnoreTag: 
+  m_TransparentLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MinimumDistanceFromTarget: 0.1
+  m_AvoidObstacles: 1
+  m_DistanceLimit: 0
+  m_MinimumOcclusionTime: 0
+  m_CameraRadius: 1
+  m_Strategy: 0
+  m_MaximumEffort: 4
+  m_SmoothingTime: 0
+  m_Damping: 2
+  m_DampingWhenOccluded: 0
+  m_OptimalTargetDistance: 0
 --- !u!1001 &3797431120915276132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -296,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1380149253945799857, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_Intensity
-      value: 31.25
+      value: 72.00001
       objectReference: {fileID: 0}
     - target: {fileID: 1380149253945799857, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_ShadowRadius
@@ -308,7 +343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1380149253945799858, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_Intensity
-      value: 125
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1380149253945799858, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_ShapeRadius
@@ -316,7 +351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1380149253945799858, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_LuxAtDistance
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1380149253945799858, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_ShadowNearPlane
@@ -337,6 +372,10 @@ PrefabInstance:
     - target: {fileID: 1433077324000146465, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1433077324000146468, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: sprintMultiplyer
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1433077324000146469, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_RootOrder
@@ -569,11 +608,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1184991661472564111, guid: 385a0c3bfa936874ba88fc5659a3e699, type: 3}
       propertyPath: far clip plane
-      value: 5000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1184991661472564111, guid: 385a0c3bfa936874ba88fc5659a3e699, type: 3}
       propertyPath: near clip plane
-      value: 0.1
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1184991661472564145, guid: 385a0c3bfa936874ba88fc5659a3e699, type: 3}
       propertyPath: m_Name

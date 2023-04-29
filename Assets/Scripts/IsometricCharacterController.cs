@@ -208,7 +208,7 @@ public class IsometricCharacterController : MonoBehaviour
 
             _inMove = true;
              _animator.SetFloat("InputAngle", angle);
-            //_animator.SetFloat("MoveSpeed", currentMoveSpeed / Speed);
+            _animator.SetFloat("MoveSpeed", currentMoveSpeed / Speed);
 
 
 
