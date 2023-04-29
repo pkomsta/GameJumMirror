@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update\
     private void Awake()
     {
+        shadowFolowPathsDict = new Dictionary<CurrentLevel, List<Vector3>>();
         Instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
         UIMenu = GameObject.FindGameObjectWithTag("UIMenu");
