@@ -96,6 +96,7 @@ public class IsometricCharacterController : MonoBehaviour
     private void RunEverySecondEvent()
     {
         playerLight.ChangeCurrentIntensity(_isSprinting ? -playerLight.intensityTakenPerTick*3f : -playerLight.intensityTakenPerTick);
+        GameManager.Instance.SavePlayerPosition(this.transform.position);
         EverySecond?.Invoke();
     }
     private void InitializeEvents()
