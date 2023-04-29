@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Wall
   - UIMenu
-  - DialogueTrigger
   layers:
   - Default
   - TransparentFX
