@@ -278,6 +278,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120462032548349255}
     m_Modifications:
+    - target: {fileID: 1380149253945799856, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380149253945799856, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0044
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380149253945799856, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380149253945799857, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380149253945799858, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380149253945799858, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 1433077324000146464, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_Radius
       value: 0.75
@@ -342,9 +366,41 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 84
       objectReference: {fileID: 0}
+    - target: {fileID: 2925147144175900704, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.37
+      objectReference: {fileID: 0}
     - target: {fileID: 5989800017866524803, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026741924358877541, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_Intensity
+      value: 70.06254
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026741924358877541, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_SpotAngle
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026741924358877541, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009640719945803673, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009640719945803673, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_CustomSpotLightShadowCone
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080185199324436731, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080185199324436731, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.86
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1433077324000146466, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
