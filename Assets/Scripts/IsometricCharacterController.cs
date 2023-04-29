@@ -175,6 +175,12 @@ public class IsometricCharacterController : MonoBehaviour
                     _animator.CrossFade("Running", 0.2f);
 
                 }
+                else
+                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk") && currentMoveSpeed < Speed)
+                {
+                    _animator.CrossFade("Walk", 0.1f);
+
+                }
             }
             else
             {
@@ -202,7 +208,7 @@ public class IsometricCharacterController : MonoBehaviour
             
 
             _inMove = true;
-            // _animator.SetFloat("InputAngle", angle);
+             _animator.SetFloat("InputAngle", angle);
             //_animator.SetFloat("MoveSpeed", currentMoveSpeed / Speed);
 
 
