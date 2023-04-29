@@ -1,0 +1,2 @@
+{DEBUGGER} Napotkano błąd! Prawdopodobnie w instancji prefabu Dialogue Trigger nie ustawiłeś nazwy dialogu! Pamiętaj że musi ona zawierać rozszerzenie ".txt"!
+#END
