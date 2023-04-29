@@ -280,23 +280,43 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1380149253945799856, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0024
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1380149253945799856, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0044
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1380149253945799856, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0003
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380149253945799857, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380149253945799857, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_Intensity
+      value: 31.25
       objectReference: {fileID: 0}
     - target: {fileID: 1380149253945799857, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_ShadowRadius
-      value: 1
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380149253945799857, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 3745
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380149253945799858, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_Intensity
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 1380149253945799858, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_ShapeRadius
-      value: 1
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380149253945799858, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1380149253945799858, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_ShadowNearPlane
@@ -368,7 +388,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2925147144175900704, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.37
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2925147144175900704, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 5989800017866524803, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_RootOrder
@@ -376,23 +400,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6026741924358877541, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_Intensity
-      value: 70.06254
+      value: 62.72487
       objectReference: {fileID: 0}
     - target: {fileID: 6026741924358877541, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_SpotAngle
-      value: 30
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6026741924358877541, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_InnerSpotAngle
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026741924358877541, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8009640719945803673, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_Intensity
-      value: 15
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8009640719945803673, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_CustomSpotLightShadowCone
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9080185199324436731, guid: 44e8d2e2ea528554cae94c24fdfbbb39, type: 3}
       propertyPath: m_RootOrder
