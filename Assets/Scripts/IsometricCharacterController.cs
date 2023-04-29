@@ -170,13 +170,16 @@ public class IsometricCharacterController : MonoBehaviour
                 inputMovement = MathF.Abs(angle) > 100 ? inputMovement.normalized * Speed * backwardsMovmentPenalty * Time.deltaTime : inputMovement.normalized * Speed* sprintMultiplyer * Time.deltaTime;
                 currentMoveSpeed = MathF.Abs(angle) > 100 ? Speed * backwardsMovmentPenalty : Speed*sprintMultiplyer;
                 int runningStateHash = Animator.StringToHash("Base Layer.Running");
-                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Running") && currentMoveSpeed > Speed)
+                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Running"))
                 {
-                    _animator.CrossFade("Running", 0.1f);
+                    _animator.CrossFade("Running", 0.2f);
 
-                }else if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk"))
+                }
+                else
+                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk") && currentMoveSpeed < Speed)
                 {
                     _animator.CrossFade("Walk", 0.1f);
+
                 }
             }
             else
@@ -187,7 +190,7 @@ public class IsometricCharacterController : MonoBehaviour
                 //  _animator.SetBool("IsRunning", false);
                 if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk"))
                 {
-                    _animator.CrossFade("Walk", 0.1f);
+                    _animator.CrossFade("Walk", 0.2f);
 
                 }
             }
@@ -205,8 +208,7 @@ public class IsometricCharacterController : MonoBehaviour
             
 
             _inMove = true;
-            _animator.SetFloat("InputAngle", angle);
-            Debug.Log("Angle: " + angle);
+             _animator.SetFloat("InputAngle", angle);
             //_animator.SetFloat("MoveSpeed", currentMoveSpeed / Speed);
 
 
@@ -221,7 +223,7 @@ public class IsometricCharacterController : MonoBehaviour
 
                 if (!_animator.GetNextAnimatorStateInfo(0).IsName("Idle"))
                 {
-                    _animator.CrossFade("Idle", 0.1f);
+                    _animator.CrossFade("Idle", 0.2f);
 
                 }
                 _animator.SetBool("IsWalking", false);

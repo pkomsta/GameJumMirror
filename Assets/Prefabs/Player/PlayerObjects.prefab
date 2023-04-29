@@ -45,7 +45,15 @@ PrefabInstance:
     - target: {fileID: 6250103164325306576, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
       propertyPath: m_Follow
       value: 
-      objectReference: {fileID: 5123856537416745793}
+      objectReference: {fileID: 5123856537590461341}
+    - target: {fileID: 6250103164325306576, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
+      propertyPath: m_Lens.FarClipPlane
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250103164325306576, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
+      propertyPath: m_Lens.NearClipPlane
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6250103164325306577, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
       propertyPath: m_Name
       value: CM vcam1
@@ -64,7 +72,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6250103164325306607, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4
+      value: -4.290001
       objectReference: {fileID: 0}
     - target: {fileID: 6250103164325306607, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
       propertyPath: m_LocalRotation.w
@@ -93,6 +101,26 @@ PrefabInstance:
     - target: {fileID: 6250103164325306607, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250103165501690696, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
+      propertyPath: m_LookaheadTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250103165501690696, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
+      propertyPath: m_SoftZoneWidth
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250103165501690696, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
+      propertyPath: m_SoftZoneHeight
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250103165501690696, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
+      propertyPath: m_CenterOnActivate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250103165501690696, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
+      propertyPath: m_LookaheadSmoothing
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10c740e3d0ffe83409107f7e256d59db, type: 3}
@@ -224,7 +252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1184991661472564110, guid: 385a0c3bfa936874ba88fc5659a3e699, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4
+      value: -4.290001
       objectReference: {fileID: 0}
     - target: {fileID: 1184991661472564110, guid: 385a0c3bfa936874ba88fc5659a3e699, type: 3}
       propertyPath: m_LocalRotation.w
@@ -254,6 +282,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1184991661472564111, guid: 385a0c3bfa936874ba88fc5659a3e699, type: 3}
+      propertyPath: m_Depth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1184991661472564111, guid: 385a0c3bfa936874ba88fc5659a3e699, type: 3}
+      propertyPath: far clip plane
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1184991661472564111, guid: 385a0c3bfa936874ba88fc5659a3e699, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1184991661472564145, guid: 385a0c3bfa936874ba88fc5659a3e699, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -265,6 +305,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1184991661472564110, guid: 385a0c3bfa936874ba88fc5659a3e699, type: 3}
   m_PrefabInstance: {fileID: 6298978956189117582}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5123856539023535935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1184991661472564145, guid: 385a0c3bfa936874ba88fc5659a3e699, type: 3}
+  m_PrefabInstance: {fileID: 6298978956189117582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3239983961447089263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123856539023535935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26d6499a6bd256e47b859377446493a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 0
+  fadeRadius: 0
+  priority: 0
+  customPasses:
+  - rid: 232458319793487872
+  injectionPoint: 1
+  m_TargetCamera: {fileID: 0}
+  useTargetCamera: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 232458319793487872
+      type: {class: FullScreenCustomPass, ns: UnityEngine.Rendering.HighDefinition, asm: Unity.RenderPipelines.HighDefinition.Runtime}
+      data:
+        m_Name: Custom Pass
+        enabled: 1
+        targetColorBuffer: 0
+        targetDepthBuffer: 0
+        clearFlags: 0
+        passFoldout: 0
+        m_Version: 0
+        fullscreenPassMaterial: {fileID: -5605289326131794027, guid: 92a4cc95b7a589f48accfc11047037d4, type: 3}
+        materialPassIndex: 0
+        materialPassName: <Unnamed Pass 0>
+        fetchColorBuffer: 0
 --- !u!1001 &7342304775136189581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -324,10 +406,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: LookAt
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2521596968303353805, guid: 21f7d2ba51cc69647814dbdbbad801a6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 21f7d2ba51cc69647814dbdbbad801a6, type: 3}
 --- !u!4 &5123856537416745793 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2521596968303353804, guid: 21f7d2ba51cc69647814dbdbbad801a6, type: 3}
   m_PrefabInstance: {fileID: 7342304775136189581}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5123856537416745854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2521596968303353843, guid: 21f7d2ba51cc69647814dbdbbad801a6, type: 3}
+  m_PrefabInstance: {fileID: 7342304775136189581}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &418316242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123856537416745854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb780a2f25fed4498fe55df8fc1f959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 5123856537590461341}
+  threshold: 2
+  smoothSpeed: 0.125
+  offset: {x: 0, y: 0, z: 0}
+  wallDistance: 2
