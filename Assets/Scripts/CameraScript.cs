@@ -39,18 +39,26 @@ public class CameraScript : MonoBehaviour
             mousePos = ray.GetPoint(distance);
 
         }
-        RaycastHit hit;
-        Vector3 targetPos = (player.position+mousePos)/2f;
-        if (Physics.Raycast(ray, out hit))
-        {
-            
-            if (hit.collider.tag == "Wall" && Vector3.Distance(hit.point,player.position) < threshold*2f)
-            {
+        Vector3 targetPos = (player.position + mousePos) / 2f;
+        /*  RaycastHit hit;
 
-                targetPos = player.position;
-                Debug.Log("Hit Wall " + Vector3.Distance(hit.point, player.position));
-            }
-        }
+          if (Physics.Raycast(ray, out hit))
+          {
+
+              if (Vector3.Distance(hit.point,player.position) < threshold*2f)
+              {
+                  Collider[] hitColliders = Physics.OverlapSphere(hit.point, 2.5f);
+                  foreach (var hitCollider in hitColliders)
+                  {
+                      if (hitCollider.tag == "Wall")
+                      {
+                          targetPos = player.position;
+                          Debug.Log("Hit Wall " + Vector3.Distance(hit.point, player.position));
+                      }
+                  }
+
+              }
+          }*/
         targetPos.x = Mathf.Clamp(targetPos.x, -threshold + player.position.x, threshold + player.position.x);
         targetPos.y = 0f;
         targetPos.z = Mathf.Clamp(targetPos.z, -threshold + player.position.z, threshold + player.position.z);

@@ -17,6 +17,8 @@ public class IsometricCharacterController : MonoBehaviour
     [SerializeField] private AudioClip[] _deathSound;
     [SerializeField] private AudioClip[] _takeDamageSound;
     [SerializeField] private float _pickUpRadius = 5f;
+    [SerializeField] Transform CameraObject;
+    [SerializeField] private float rotationSpeed = 2f;
     private PlayerLight playerLight;
   
     public UnityEvent OnStartMoving;
@@ -34,7 +36,7 @@ public class IsometricCharacterController : MonoBehaviour
     PickupObject closestPickUp;
 
     private bool _inMove;
-    private bool _isDead;
+    private bool _isDead = false;
     private bool _isSprinting;
     float currentMoveSpeed = 0f;
     private void Start()
@@ -58,16 +60,36 @@ public class IsometricCharacterController : MonoBehaviour
             _isDead= true;
             return;
         }
-
+        if(_isDead)
+        {
+            _animator.SetBool("IsWalking", false);
+            _animator.SetBool("IsRunning", false);
+            _animator.CrossFade("Death",0.5f);
+            
+        }
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         PickUp();
         MoveWASD();
         Look(ray);
+        
 
 
+    }
 
+    private void LateUpdate()
+    {
+        if (_isDead)
+        {
+            return;
+        }
+        if (playerLight.GetCurrentIntensity() <= 0f)
+        {
+            _isDead = true;
+            return;
+        }
+       // RotateCamera();
     }
     private void RunEverySecondEvent()
     {
@@ -82,6 +104,29 @@ public class IsometricCharacterController : MonoBehaviour
         if (OnUseItem == null) OnUseItem = new UnityEvent();
         if (EverySecond == null) EverySecond = new UnityEvent();
 
+    }
+    private void RotateCamera()
+    {
+        if (Input.GetKey(KeyCode.Q))
+        {
+            float rotateAmount = rotationSpeed;
+
+            // Calculate the new Y rotation of the virtual camera
+            float yRotation = CameraObject.transform.localEulerAngles.y + rotateAmount;
+
+            // Apply the new rotation to the virtual camera, while keeping its X and Z rotation values
+            CameraObject.transform.localEulerAngles = new Vector3(60, yRotation, 0);
+        }
+        else if(Input.GetKey(KeyCode.E))
+        {
+            float rotateAmount = -rotationSpeed;
+
+            // Calculate the new Y rotation of the virtual camera
+            float yRotation = CameraObject.transform.localEulerAngles.y + rotateAmount;
+
+            // Apply the new rotation to the virtual camera, while keeping its X and Z rotation values
+            CameraObject.transform.localEulerAngles = new Vector3(60, yRotation, 0);
+        }
     }
     private void Look(Ray ray)
     {
@@ -122,11 +167,24 @@ public class IsometricCharacterController : MonoBehaviour
             {
                 inputMovement = MathF.Abs(angle) > 100 ? inputMovement.normalized * Speed * backwardsMovmentPenalty * Time.deltaTime : inputMovement.normalized * Speed* sprintMultiplyer * Time.deltaTime;
                 currentMoveSpeed = MathF.Abs(angle) > 100 ? Speed * backwardsMovmentPenalty : Speed*sprintMultiplyer;
+                int runningStateHash = Animator.StringToHash("Base Layer.Running");
+                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Running"))
+                {
+                    _animator.CrossFade("Running", 0.2f);
+
+                }
             }
             else
             {
                 inputMovement = MathF.Abs(angle) > 100 ? inputMovement.normalized * Speed * backwardsMovmentPenalty * Time.deltaTime : inputMovement.normalized * Speed * Time.deltaTime;
                 currentMoveSpeed = MathF.Abs(angle) > 100 ? Speed * backwardsMovmentPenalty : Speed;
+                // _animator.SetBool("IsWalking", true);
+                //  _animator.SetBool("IsRunning", false);
+                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk"))
+                {
+                    _animator.CrossFade("Walk", 0.2f);
+
+                }
             }
             
 
@@ -134,13 +192,17 @@ public class IsometricCharacterController : MonoBehaviour
             Vector3 rotatedMovement = rotation * inputMovement;
 
            // SoundManager.Instance.PlayOnGivenAudioSource(_audioSourceMove, _walkSound);
-            _inMove = true;
+            
 
             transform.Translate(inputMovement, Space.World);
 
-           // _animator.SetFloat("InputAngle", angle);
+
+            
+
+            _inMove = true;
+            // _animator.SetFloat("InputAngle", angle);
             //_animator.SetFloat("MoveSpeed", currentMoveSpeed / Speed);
-           
+
 
 
         }
@@ -150,15 +212,23 @@ public class IsometricCharacterController : MonoBehaviour
             {
               //  SoundManager.Instance.StopOnGivenAudioSource(_audioSourceMove);
                 OnStopMoving?.Invoke();
+
+                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Idle"))
+                {
+                    _animator.CrossFade("Idle", 0.2f);
+
+                }
+                _animator.SetBool("IsWalking", false);
+                _animator.SetBool("IsRunning", false);
             }
             _inMove = false;
-
-          //  _animator.Play(PlayerAnimationConst.IDLE, 1); //Set legs layer to idle state
+            
+            //  _animator.Play(PlayerAnimationConst.IDLE, 1); //Set legs layer to idle state
 
             //_animator.SetFloat("InputAngle", angle);
-           // _animator.SetFloat("Speed", 0f);
+            // _animator.SetFloat("Speed", 0f);
 
-            
+
         }
 
     }

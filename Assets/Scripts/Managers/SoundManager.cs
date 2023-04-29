@@ -91,6 +91,13 @@ public class SoundManager : MonoBehaviour
         MusicSource.volume = musicVolume * masterVolume;
         EffectsSource.volume = effectVolume * masterVolume;
     }
+
+    public void SaveVolumeSettings(float master, float effect, float music)
+    {
+        masterVolume = master;
+        effectVolume = effect;
+        musicVolume = music;
+    }
     IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
     {
         float currentTime = 0;
