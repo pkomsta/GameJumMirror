@@ -17,6 +17,11 @@ public class StunState : State
         en.canSeePlayer = false;
         en.navMeshAgent.SetDestination(en.transform.position);
         Debug.Log("Stunned!");
+        if (!enemy.GetAnimator().GetNextAnimatorStateInfo(0).IsName("Monster_Stun"))
+        {
+            enemy.GetAnimator().CrossFade("Monster_Stun", 0.2f);
+
+        }
         Invoke("TurnOnVision", en.stunTime);
     }
 

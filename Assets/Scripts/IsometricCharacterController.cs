@@ -148,7 +148,6 @@ public class IsometricCharacterController : MonoBehaviour
     }
     private void Look(Ray ray)
     {
-        Debug.Log("Before rotation: " + transform.position.y);
         Plane plane = new Plane(Vector3.up, transform.position);
 
             // Declare a variable to store the distance to the plane
@@ -167,7 +166,6 @@ public class IsometricCharacterController : MonoBehaviour
             // Smoothly rotate towards the mouse position
             
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, TurnSpeed * Time.deltaTime);
-            Debug.Log("After rotation: " + transform.position.y);
         }
         
     }
