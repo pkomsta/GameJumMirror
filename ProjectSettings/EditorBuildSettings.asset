@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 8fa3684a1bf471f43b1554e10c8a9df9
-  - enabled: 0
-    path: Assets/Scenes/1poziom.unity
-    guid: e771038ebf9c6bb459a19612d9493bd2
   - enabled: 1
     path: Assets/Scenes/4poziom.unity
     guid: f7cf522ae8011154681e43686dfd9c33
@@ -23,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndingG.unity
     guid: 830fe7a2c05c449428d39de708a2237e
+  - enabled: 0
+    path: Assets/Scenes/1poziom.unity
+    guid: e771038ebf9c6bb459a19612d9493bd2
   m_configObjects: {}
