@@ -1,4 +1,2 @@
-{MC}Rocks are blocking my way out… I need to find another path if I don’t want to stay here forever.
-{Szczur}Pisk Pisk kurwa
-{MC}No elo!
+{MC}My grandfather’s pickaxe... So, it’s been here for all these years... So long.
 #END
