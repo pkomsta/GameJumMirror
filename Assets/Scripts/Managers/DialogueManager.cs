@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class DialogueManager : MonoBehaviour
     GameObject usedTrigger;
     Coroutine coroutine;
     public static DialogueManager Instance;
+    public UnityEvent OnCloseDialogue;
     private void Awake()
     {
 
@@ -150,5 +152,6 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         nickText.text = "";
         currentIndex = 0;
+        OnCloseDialogue?.Invoke();
     }
 }

@@ -42678,6 +42678,10 @@ PrefabInstance:
       propertyPath: PathHeader
       value: 
       objectReference: {fileID: 1821289103}
+    - target: {fileID: 4629346244070027918, guid: 3b548699f7fcfe045bb416ac7e5be5f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6106344190203806594, guid: 3b548699f7fcfe045bb416ac7e5be5f7, type: 3}
       propertyPath: m_RootOrder
       value: 1

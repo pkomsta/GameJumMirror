@@ -11,9 +11,8 @@ public class DialogueEventTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            var dm = other.GetComponent<DialogueManager>();
-            dm.StartDialogue(dialogueName, this.gameObject);
-            dm.OnCloseDialogue.AddListener( StartEvent);
+            DialogueManager.Instance.StartDialogue(dialogueName, this.gameObject);
+            DialogueManager.Instance.OnCloseDialogue.AddListener( StartEvent);
 
         }
     }
