@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.032413945, g: 0.020891383, b: 0.01876413, a: 1}
+  m_IndirectSpecularColor: {r: 0.032988943, g: 0.020898122, b: 0.017878886, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -41408,14 +41408,6 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1395794245}
-    - target: {fileID: 883207734, guid: 37bf142896a6c7641a4a813b530d262c, type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: PauseGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939460419, guid: 37bf142896a6c7641a4a813b530d262c, type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
     - target: {fileID: 6179360841818747762, guid: 37bf142896a6c7641a4a813b530d262c, type: 3}
       propertyPath: m_Name
       value: GameUI
