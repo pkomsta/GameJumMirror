@@ -43,11 +43,16 @@ public class GameManager : MonoBehaviour
         UIMenu = GameObject.FindGameObjectWithTag("UIMenu");
         isPlayerDead = false;
         isGamePaused = false;
+        Time.timeScale = 1.0f;
+
     }
     void Start()
     {
         isPlayerDead = false;
         isGamePaused = false;
+        Time.timeScale = 1.0f;
+
+
     }
 
     private void Update()
