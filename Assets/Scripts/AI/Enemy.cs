@@ -112,7 +112,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-       // _animator = this.GetComponent<Animator>();
+        _animator = this.GetComponent<Animator>();
        // _audioSource = GetComponent<AudioSource>();
         _pathIndex = 0;
         _forwardFlag = true;

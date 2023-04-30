@@ -9,11 +9,17 @@ public class ChaseState : State
     {
         enemy.coneOfVision.MeshRenderer.material = enemy.coneOfVision.Materials[2];
         enemy.coneOfVision.VisionRadius = enemy.coneOfVision.VisionRadiusBig;
+        enemy.navMeshAgent.speed = 3f;
     }
 
     public override void UpdateState(Enemy enemy)
     {
-        if(enemy.canSeePlayer)
+        if (!enemy.GetAnimator().GetNextAnimatorStateInfo(0).IsName("Monster_Run"))
+        {
+            enemy.GetAnimator().CrossFade("Monster_Run", 0.2f);
+
+        }
+        if (enemy.canSeePlayer)
         {
             enemy.coneOfVision.MeshRenderer.material = enemy.coneOfVision.Materials[2];
 
