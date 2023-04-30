@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndingG.unity
     guid: 830fe7a2c05c449428d39de708a2237e
+  - enabled: 0
+    path: Assets/Scenes/1poziom.unity
+    guid: e771038ebf9c6bb459a19612d9493bd2
   m_configObjects: {}
