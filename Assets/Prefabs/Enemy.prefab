@@ -632,14 +632,15 @@ MonoBehaviour:
   attackPoint: {fileID: 0}
   navMeshAgent: {fileID: 0}
   _floorPointer: {fileID: 4629346244070027918}
+  PathHeader: {fileID: 0}
+  _pathIndex: 0
+  _forwardFlag: 0
   _path:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _pathIndex: 0
-  _forwardFlag: 0
   patrol: {fileID: 5730110457105156599}
   chase: {fileID: -3234283330593181737}
   attack: {fileID: 1011886397411497240}
@@ -650,7 +651,9 @@ MonoBehaviour:
   stunTime: 3
   lastSeenPos: {x: 0, y: 0, z: 0}
   deathDisplayTransform: {fileID: 0}
+  currentState: {fileID: 0}
   coneOfVision: {fileID: 0}
+  previousState: {fileID: 0}
 --- !u!114 &5730110457105156599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,7 +721,7 @@ MonoBehaviour:
   ObstacleMask:
     serializedVersion: 2
     m_Bits: 128
-  VisionRadius: 6
+  VisionRadius: 8
   VisionAngle: 90
   Direction: {x: 0, y: 0, z: 0}
   EulerAngles: {x: 0, y: 0, z: 0}
@@ -766,7 +769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3795684287424123635, guid: dfc17b768c406bc47bbecd4a90180c5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3795684287424123635, guid: dfc17b768c406bc47bbecd4a90180c5f, type: 3}
       propertyPath: m_LocalPosition.z
