@@ -9,12 +9,14 @@ public class DialogueManager : MonoBehaviour
 {
     public TMP_Text dialogueText, nickText;
     public GameObject panel;
+    public Animator animator;
+    public AudioClip talkingClip;
     private string[] lines;
     private string[] dividedLine;
     private int currentIndex = 0;
-    public Animator animator;
     bool isTyping = false;
     bool unFreezeFlag = false;
+    AudioSource audioSource;
     GameObject usedTrigger;
     Coroutine coroutine;
     public static DialogueManager Instance;
@@ -22,7 +24,7 @@ public class DialogueManager : MonoBehaviour
     {
 
         Instance = this;
-
+        audioSource = GetComponent<AudioSource>();
     }
     private void Start()
     {
@@ -52,13 +54,14 @@ public class DialogueManager : MonoBehaviour
     public void NextLine()
     {
         currentIndex++;
-        StartCoroutine(waitAndWriteLetter(0.2f, 0));
+        StartCoroutine(waitAndWriteLetter(0.1f, 0));
     }
     public IEnumerator waitAndWriteLetter(float delay, int index)
     {
         dividedLine = lines[currentIndex].Split();
         while (index < dividedLine.Length)
         {
+            SoundManager.Instance.PlayClipOnGivenAudioSource(audioSource, talkingClip);
             yield return new WaitForSeconds(delay);
             lines[currentIndex] = string.Join(" ", dividedLine.Take(index + 1).ToArray());
 
@@ -101,7 +104,10 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(string dialogueNameWithExtention)
     {
         if (isTyping)
-            return;
+        {
+            CloseDialogue();
+        }
+            
         isTyping = true;
         panel.SetActive(true);
         string filePath = Application.streamingAssetsPath
@@ -114,7 +120,9 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogueWithFreeze(string dialogueNameWithExtention)
     {
         if (isTyping)
-            return;
+        {
+            CloseDialogue();
+        }
         GameManager.Instance.FreezeGame();
         unFreezeFlag = true;
         isTyping = true;

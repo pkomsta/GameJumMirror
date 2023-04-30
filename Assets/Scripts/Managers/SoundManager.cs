@@ -67,6 +67,19 @@ public class SoundManager : MonoBehaviour
         }
 
     }
+
+    public void PlayClipOnGivenAudioSource(AudioSource audioSource, AudioClip clip)
+    {
+
+        if (!audioSource.isPlaying)
+        {
+            audioSource.clip = clip;
+            audioSource.volume = effectVolume * masterVolume;
+            audioSource.Play();
+        }
+
+    }
+
     public void StopOnGivenAudioSource(AudioSource audioSource)
     {
         if (audioSource.isPlaying)
