@@ -30,8 +30,6 @@ public class Enemy : MonoBehaviour
 
     public EverySecondEvent EverySecond;
 
-    public delegate void DeathDisplayEventHandler(Transform displayLocation, bool adds);
-    public event DeathDisplayEventHandler DeathDisplayEvent;
 
     [Header("AI")]
     [HideInInspector]
@@ -103,9 +101,13 @@ public class Enemy : MonoBehaviour
         _attackValue = loadData.AttackValue;
         _attackRadius = loadData.AttackRadius;
         */
-        CreatePath();
-        coneOfVision = GetComponent<MMConeOfVision>();
-        currentState = patrol;
+        if(PathHeader != null)
+        {
+            CreatePath();
+            coneOfVision = GetComponent<MMConeOfVision>();
+            currentState = patrol;
+        }
+        
 
     }
 
@@ -257,8 +259,6 @@ public class Enemy : MonoBehaviour
     private void DestroyEnemy()
     {
 
-        DeathDisplayEvent(deathDisplayTransform, true);
-        DeathDisplayEvent = null;
         Destroy(this.gameObject);
     }
 

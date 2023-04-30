@@ -67,6 +67,7 @@ public class IsometricCharacterController : MonoBehaviour
     {
         if (_isDead)
         {
+            playerLight.enabled = false;
             return;
         }
 
@@ -363,5 +364,9 @@ public class IsometricCharacterController : MonoBehaviour
     public void KillPlayer()
     {
         _isDead = true;
+    }
+    public bool IsDead()
+    {
+        return _isDead;
     }
 }
