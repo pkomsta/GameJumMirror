@@ -29,8 +29,17 @@ public class FollowState : State
                 enemy.GetAnimator().CrossFade("Idle", 0.2f);
 
             }
-            nextPos = GameManager.Instance.shadowFolowPathsDict[GameManager.Instance.currentLevel][index];
-            enemy.navMeshAgent.SetDestination(nextPos); ;
+            try
+            {
+                nextPos = GameManager.Instance.shadowFolowPathsDict[GameManager.Instance.currentLevel][index];
+                enemy.navMeshAgent.SetDestination(nextPos);
+            }
+            catch(System.Exception e)
+            {
+                started = false;
+                StartCoroutine(WaitForMove(enemy));
+            }
+            
 
         }
         else if (!enemy.GetAnimator().GetNextAnimatorStateInfo(0).IsName("Walk"))
@@ -46,7 +55,7 @@ public class FollowState : State
     private IEnumerator WaitForMove(Enemy enemy)
     {
         yield return new WaitForSeconds(folowAfterSeconds);
-        nextPos = GameManager.Instance.shadowFolowPathsDict[GameManager.Instance.currentLevel][0];
+        nextPos = GameManager.Instance.shadowFolowPathsDict[GameManager.Instance.currentLevel][index];
         enemy.navMeshAgent.SetDestination(nextPos);
         started= true;
     }
