@@ -17,36 +17,17 @@ public class DialogueManager : MonoBehaviour
     bool unFreezeFlag = false;
     GameObject usedTrigger;
     Coroutine coroutine;
-    public IEnumerator waitAndWriteLetter(float delay, int index)
+    public static DialogueManager Instance;
+    private void Awake()
     {
-        dividedLine = lines[currentIndex].Split();
-        while (index < dividedLine.Length)
-        {
-            yield return new WaitForSeconds(delay);
-            lines[currentIndex] = string.Join(" ", dividedLine.Take(index + 1).ToArray());
 
-            if (lines[currentIndex].Contains("{"))
-            {
-                int start = lines[currentIndex].LastIndexOf("{");
-                int end = lines[currentIndex].LastIndexOf("}") + 1;
+        Instance = this;
 
-                nickText.text = lines[currentIndex].Substring(start + 1, end - 2);
-
-                lines[currentIndex] = lines[currentIndex]
-                                      .Replace(lines[currentIndex]
-                                      .Substring(start, end), "");
-            }
-
-            dialogueText.text = lines[currentIndex];
-            index++;
-        }
-
-        if(currentIndex == dividedLine.Length)
-        {
-            StopCoroutine(coroutine);
-        }
     }
-
+    private void Start()
+    {
+        panel = PlayerUIManager.Instance.dialoguePanel;
+    }
     private void Update()
     {
         if(lines != null)
@@ -73,6 +54,35 @@ public class DialogueManager : MonoBehaviour
         currentIndex++;
         StartCoroutine(waitAndWriteLetter(0.2f, 0));
     }
+    public IEnumerator waitAndWriteLetter(float delay, int index)
+    {
+        dividedLine = lines[currentIndex].Split();
+        while (index < dividedLine.Length)
+        {
+            yield return new WaitForSeconds(delay);
+            lines[currentIndex] = string.Join(" ", dividedLine.Take(index + 1).ToArray());
+
+            if (lines[currentIndex].Contains("{"))
+            {
+                int start = lines[currentIndex].LastIndexOf("{");
+                int end = lines[currentIndex].LastIndexOf("}") + 1;
+
+                nickText.text = lines[currentIndex].Substring(start + 1, end - 2);
+
+                lines[currentIndex] = lines[currentIndex]
+                                      .Replace(lines[currentIndex]
+                                      .Substring(start, end), "");
+            }
+
+            dialogueText.text = lines[currentIndex];
+            index++;
+        }
+
+        if (currentIndex == dividedLine.Length)
+        {
+            StopCoroutine(coroutine);
+        }
+    }
 
     public void StartDialogue(string dialogueNameWithExtention, GameObject trig)
     {
@@ -88,10 +98,24 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(waitAndWriteLetter(0.2f, 0));
     }
 
-    public void StartDialogueWithUnFreeze(string dialogueNameWithExtention)
+    public void StartDialogue(string dialogueNameWithExtention)
     {
         if (isTyping)
             return;
+        isTyping = true;
+        panel.SetActive(true);
+        string filePath = Application.streamingAssetsPath
+                              + "/Dialogues/" + dialogueNameWithExtention;
+        lines = File.ReadAllLines(filePath);
+        StartCoroutine(waitAndWriteLetter(0.2f, 0));
+    }
+
+
+    public void StartDialogueWithFreeze(string dialogueNameWithExtention)
+    {
+        if (isTyping)
+            return;
+        GameManager.Instance.FreezeGame();
         unFreezeFlag = true;
         isTyping = true;
         panel.SetActive(true);
@@ -100,6 +124,7 @@ public class DialogueManager : MonoBehaviour
         lines = File.ReadAllLines(filePath);
         StartCoroutine(waitAndWriteLetter(0.2f, 0));
     }
+
 
     public void CloseDialogue()
     {

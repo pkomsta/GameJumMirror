@@ -6,7 +6,6 @@ public class TutorialSpawnEnemy : MonoBehaviour
 {
     
     public GameObject FirstEnemy;
-    public GameObject DialoguePanel;
     public string dialogueName;
 
     private void OnTriggerEnter(Collider other)
@@ -14,8 +13,7 @@ public class TutorialSpawnEnemy : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             FirstEnemy.gameObject.SetActive(true);
-            GameManager.Instance.FreezeGame();
-            other.GetComponent<DialogueManager>().StartDialogueWithUnFreeze(dialogueName);
+            DialogueManager.Instance.StartDialogueWithFreeze(dialogueName);
             gameObject.SetActive(false);
 
         }

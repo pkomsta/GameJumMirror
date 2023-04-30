@@ -1,0 +1,5 @@
+{Tutorial}A little mirror in front... It seems that the monster guarding the mirror are afraid of it's reflection.
+{Tutorial}You can use the mirror to stun the enemies, click Q nearby enemy in front of you. 
+{Tutorial}Beware! The mirror is cracking with every use, so it's better to save it till then End!
+{Tutorial}In the tutorial, cracking has been turn off, for you to try it out.
+#END
