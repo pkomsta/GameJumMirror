@@ -184,6 +184,10 @@ PrefabInstance:
       value: Stalacostam1 (26)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -257,6 +261,10 @@ PrefabInstance:
       value: Stalacostam1 (168)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -323,6 +331,10 @@ PrefabInstance:
       value: Stalacostam (114)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -387,6 +399,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -467,6 +483,10 @@ PrefabInstance:
       value: Stalacostam (19)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -538,6 +558,10 @@ PrefabInstance:
       value: Stalacostam1 (32)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -547,6 +571,76 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1720276876199778998, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
   m_PrefabInstance: {fileID: 15015347}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &19733989
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1913931914}
+    m_Modifications:
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.029370692
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.027083453
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.2117317
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.203557
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17414576
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.97574514
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.21890977
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311822520327093475, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+      propertyPath: m_Name
+      value: MusicManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+--- !u!4 &19733990 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4101341906511817820, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
+  m_PrefabInstance: {fileID: 19733989}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &22514749
 PrefabInstance:
@@ -623,7 +717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 27163234}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Becz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -802,6 +896,10 @@ PrefabInstance:
       value: Stalacostam (102)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -827,6 +925,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -939,6 +1041,10 @@ PrefabInstance:
       value: Stalacostam1 (42)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -1005,6 +1111,10 @@ PrefabInstance:
       value: Stalacostam1 (15)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -1025,6 +1135,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -1140,6 +1254,10 @@ PrefabInstance:
       value: Stalacostam (88)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -1159,7 +1277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 87201860}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1259,6 +1377,10 @@ PrefabInstance:
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_Name
       value: skalka (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_NavMeshLayer
@@ -1375,6 +1497,10 @@ PrefabInstance:
       value: Stalacostam1 (37)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -1395,6 +1521,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -1523,6 +1653,10 @@ PrefabInstance:
       value: Stalacostam1 (56)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -1589,6 +1723,10 @@ PrefabInstance:
       value: Stalacostam1 (8)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -1653,6 +1791,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -1741,6 +1883,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -1848,6 +1994,10 @@ PrefabInstance:
       value: Kolumna (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -1914,6 +2064,10 @@ PrefabInstance:
       value: Stalacostam1 (41)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -1934,6 +2088,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -2063,6 +2221,10 @@ PrefabInstance:
       value: Scana (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -2122,6 +2284,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -2303,6 +2469,10 @@ PrefabInstance:
       value: Stalacostam (92)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -2399,6 +2569,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3184321536055613837, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
   m_PrefabInstance: {fileID: 1085797637}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &158180504 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 158180504, guid: 37bf142896a6c7641a4a813b530d262c, type: 3}
+  m_PrefabInstance: {fileID: 1266093945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &159160672 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3184321536055613837, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
@@ -2414,6 +2595,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -2480,6 +2665,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -2587,6 +2776,10 @@ PrefabInstance:
       value: Kmienie (6)
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -2596,6 +2789,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6075540087670134373, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
   m_PrefabInstance: {fileID: 190706903}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &191786375 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7431036355919378710, guid: 3b548699f7fcfe045bb416ac7e5be5f7, type: 3}
+  m_PrefabInstance: {fileID: 2109401537}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &192222237
 PrefabInstance:
@@ -2651,6 +2849,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -2733,6 +2935,10 @@ PrefabInstance:
       value: Scana (27)
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -2799,6 +3005,10 @@ PrefabInstance:
       value: Scana (37)
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -2862,6 +3072,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (183)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -2932,6 +3146,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -3037,6 +3255,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -3184,6 +3406,10 @@ PrefabInstance:
       value: Stalacostam (75)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -3248,6 +3474,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -3328,6 +3558,10 @@ PrefabInstance:
       value: Stalacostam (31)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -3389,6 +3623,10 @@ PrefabInstance:
       value: Stalacostam1 (24)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -3404,6 +3642,10 @@ PrefabInstance:
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_Name
       value: skalka (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_NavMeshLayer
@@ -3521,6 +3763,10 @@ PrefabInstance:
       value: Kolumna (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -3580,6 +3826,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -3648,6 +3898,10 @@ PrefabInstance:
       value: Stalacostam (12)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -3714,6 +3968,10 @@ PrefabInstance:
       value: Kmienie (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -3778,6 +4036,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -3850,6 +4112,10 @@ PrefabInstance:
       value: Stalacostam (33)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -3916,6 +4182,10 @@ PrefabInstance:
       value: Stalacostam (11)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -3936,6 +4206,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -4048,6 +4322,10 @@ PrefabInstance:
       value: Stalacostam (162)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -4112,6 +4390,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -4190,6 +4472,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -4297,6 +4583,10 @@ PrefabInstance:
       value: Stalacostam (93)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -4361,6 +4651,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -4441,6 +4735,10 @@ PrefabInstance:
       value: Stalacostam (271)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -4461,6 +4759,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -4588,6 +4890,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -4730,6 +5036,10 @@ PrefabInstance:
       value: Stalacostam (109)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -4829,6 +5139,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -4941,6 +5255,10 @@ PrefabInstance:
       value: Stalacostam1 (40)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -5007,6 +5325,10 @@ PrefabInstance:
       value: Stalacostam (37)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -5066,6 +5388,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -5132,6 +5458,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (112)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -5217,6 +5547,10 @@ PrefabInstance:
       value: Stalacostam (64)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -5242,6 +5576,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -5349,6 +5687,10 @@ PrefabInstance:
       value: Stalacostam (43)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -5369,6 +5711,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -5476,6 +5822,10 @@ PrefabInstance:
       value: Kmienie (4)
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -5542,6 +5892,10 @@ PrefabInstance:
       value: Stalacostam (22)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -5606,6 +5960,10 @@ PrefabInstance:
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_Name
       value: Kmienie (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
@@ -5679,6 +6037,10 @@ PrefabInstance:
       value: Kmienie (45)
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -5709,6 +6071,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -5826,6 +6192,10 @@ PrefabInstance:
       value: Stalacostam1 (9)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -5890,6 +6260,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -5970,6 +6344,10 @@ PrefabInstance:
       value: Stalacostam (60)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -5990,6 +6368,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -6102,6 +6484,10 @@ PrefabInstance:
       value: beczka (7)
       objectReference: {fileID: 0}
     - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -6117,6 +6503,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -6249,6 +6639,10 @@ PrefabInstance:
       value: Stalacostam (50)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -6274,6 +6668,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -6386,6 +6784,10 @@ PrefabInstance:
       value: Stalacostam (104)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -6406,6 +6808,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -6516,6 +6922,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (113)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -6682,6 +7092,10 @@ PrefabInstance:
       value: Stalacostam (18)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -6753,6 +7167,10 @@ PrefabInstance:
       value: Stalacostam (32)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -6817,6 +7235,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -6904,6 +7326,10 @@ PrefabInstance:
       value: Stalacostam (108)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -6977,6 +7403,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (184)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -7093,6 +7523,10 @@ PrefabInstance:
       value: Kmienie (56)
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -7157,6 +7591,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -7237,6 +7675,10 @@ PrefabInstance:
       value: Stalacostam (37)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -7262,6 +7704,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -7369,6 +7815,10 @@ PrefabInstance:
       value: Stalacostam (33)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -7428,6 +7878,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -7496,6 +7950,10 @@ PrefabInstance:
       value: beczka (6)
       objectReference: {fileID: 0}
     - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -7555,6 +8013,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -7623,6 +8085,10 @@ PrefabInstance:
       value: Kolumna (5)
       objectReference: {fileID: 0}
     - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -7682,6 +8148,10 @@ PrefabInstance:
     - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
       propertyPath: m_Name
       value: beczka (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
       propertyPath: m_NavMeshLayer
@@ -7761,6 +8231,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -7880,6 +8354,10 @@ PrefabInstance:
       value: Brama (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6670602137821725014, guid: 265da817e63daa64faf3c315a1a101d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670602137821725014, guid: 265da817e63daa64faf3c315a1a101d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -7958,6 +8436,10 @@ PrefabInstance:
       value: Stalacostam (58)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -8024,6 +8506,10 @@ PrefabInstance:
       value: Stalacostam (24)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -8088,6 +8574,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -8210,6 +8700,10 @@ PrefabInstance:
       value: Scana (51)
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -8269,6 +8763,10 @@ PrefabInstance:
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_Name
       value: skalka (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_NavMeshLayer
@@ -8459,6 +8957,10 @@ PrefabInstance:
       value: Stalacostam (53)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -8525,6 +9027,10 @@ PrefabInstance:
       value: Stalacostam (82)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -8589,6 +9095,10 @@ PrefabInstance:
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_Name
       value: Kmienie (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
@@ -8665,6 +9175,10 @@ PrefabInstance:
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_Name
       value: Kmienie (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
@@ -8745,6 +9259,10 @@ PrefabInstance:
       value: Stalacostam (66)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -8765,6 +9283,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -8881,6 +9403,10 @@ PrefabInstance:
       value: Stalacostam (41)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -8954,6 +9480,10 @@ PrefabInstance:
       value: Stalacostam (65)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -8973,7 +9503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 749286068}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Kmi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9080,6 +9610,10 @@ PrefabInstance:
       value: Stalacostam (97)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -9100,6 +9634,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -9219,6 +9757,10 @@ PrefabInstance:
       value: Stalacostam (9)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -9297,6 +9839,10 @@ PrefabInstance:
       value: Stalacostam (40)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -9358,6 +9904,10 @@ PrefabInstance:
       value: Kmienie (48)
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -9382,11 +9932,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.28
+      value: 5.13
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9394,7 +9944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -70.83
+      value: -78.59
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9445,6 +9995,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -9506,6 +10060,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -9613,6 +10171,10 @@ PrefabInstance:
       value: Stalacostam (78)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -9622,6 +10184,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7087519064105443656, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
   m_PrefabInstance: {fileID: 809330885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &810463015
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1913931914}
+    m_Modifications:
+    - target: {fileID: 6584025041823616883, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584025041823616883, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.662863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584025041823616883, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.661593
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584025041823616883, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.560774
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584025041823616883, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584025041823616883, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584025041823616883, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584025041823616883, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584025041823616883, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584025041823616883, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584025041823616883, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584025041823616887, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+--- !u!4 &810463016 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6584025041823616883, guid: 7fdb3b9021d78124397a1ab0e65c6ab4, type: 3}
+  m_PrefabInstance: {fileID: 810463015}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &812431371
 GameObject:
@@ -9666,6 +10290,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -9717,6 +10345,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+--- !u!95 &833389048 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 833389048, guid: 37bf142896a6c7641a4a813b530d262c, type: 3}
+  m_PrefabInstance: {fileID: 1266093945}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &834237460 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3184321536055613837, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
@@ -9790,6 +10423,10 @@ PrefabInstance:
       value: Stalacostam1 (14)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -9810,6 +10447,10 @@ PrefabInstance:
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_Name
       value: skalka (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_NavMeshLayer
@@ -9945,6 +10586,10 @@ PrefabInstance:
       value: Scana (182)
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -10055,6 +10700,10 @@ PrefabInstance:
       value: Stalacostam (73)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -10075,6 +10724,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -10199,6 +10852,10 @@ PrefabInstance:
       value: Stalacostam1 (12)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -10263,6 +10920,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -10331,6 +10992,10 @@ PrefabInstance:
       value: Stalacostam (17)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -10395,6 +11060,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -10463,6 +11132,10 @@ PrefabInstance:
       value: Stalacostam1 (27)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -10522,6 +11195,10 @@ PrefabInstance:
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_Name
       value: Kmienie (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
@@ -10602,6 +11279,10 @@ PrefabInstance:
       value: Stalacostam (67)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -10666,6 +11347,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (96)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -10746,6 +11431,10 @@ PrefabInstance:
       value: Stalacostam (6)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -10810,6 +11499,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -10878,6 +11571,10 @@ PrefabInstance:
       value: Stalacostam (34)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -10898,6 +11595,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -11044,6 +11745,10 @@ PrefabInstance:
       value: Scana (54)
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -11149,6 +11854,10 @@ PrefabInstance:
       value: Kolumna (4)
       objectReference: {fileID: 0}
     - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -11208,6 +11917,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (103)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -11274,6 +11987,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -11350,6 +12067,10 @@ PrefabInstance:
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_Name
       value: Kmienie (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
@@ -11430,6 +12151,10 @@ PrefabInstance:
       value: Stalacostam (115)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -11496,6 +12221,10 @@ PrefabInstance:
       value: beczka
       objectReference: {fileID: 0}
     - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -11557,6 +12286,10 @@ PrefabInstance:
       value: Stalacostam1 (31)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -11577,6 +12310,10 @@ PrefabInstance:
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_Name
       value: skalka (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_NavMeshLayer
@@ -11694,6 +12431,10 @@ PrefabInstance:
       value: Stalacostam (76)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -11758,6 +12499,10 @@ PrefabInstance:
     - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
       propertyPath: m_Name
       value: Kolumna
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
       propertyPath: m_NavMeshLayer
@@ -11826,6 +12571,10 @@ PrefabInstance:
       value: Kolumna (8)
       objectReference: {fileID: 0}
     - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -11887,6 +12636,10 @@ PrefabInstance:
       value: Stalacostam1 (47)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -11906,7 +12659,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1038533694}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stala
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12169,6 +12922,10 @@ PrefabInstance:
       value: Stalacostam (46)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -12233,6 +12990,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -12301,6 +13062,10 @@ PrefabInstance:
       value: Stalacostam (107)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -12367,6 +13132,10 @@ PrefabInstance:
       value: Stalacostam (81)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -12392,6 +13161,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -12503,6 +13276,10 @@ PrefabInstance:
       value: Kmienie (54)
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -12567,6 +13344,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (146)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -12635,6 +13416,10 @@ PrefabInstance:
       value: Stalacostam (40)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -12655,6 +13440,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -12773,6 +13562,10 @@ PrefabInstance:
     - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
       propertyPath: m_Name
       value: beczka (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
       propertyPath: m_NavMeshLayer
@@ -13302,6 +14095,10 @@ PrefabInstance:
       value: Stalacostam (89)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -13373,6 +14170,10 @@ PrefabInstance:
       value: Stalacostam1 (38)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -13414,8 +14215,8 @@ Transform:
   - {fileID: 853898517}
   - {fileID: 1654671139}
   - {fileID: 1986353501}
-  - {fileID: 1325400596}
   - {fileID: 797963098}
+  - {fileID: 1325400596}
   - {fileID: 1117440356}
   m_Father: {fileID: 1482992169}
   m_RootOrder: 0
@@ -13430,6 +14231,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -13554,6 +14359,10 @@ PrefabInstance:
       value: Stalacostam (5)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -13620,6 +14429,10 @@ PrefabInstance:
       value: Stalacostam (149)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -13639,11 +14452,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.26
+      value: 4.22
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13651,7 +14464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -64.43
+      value: -63.81
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13707,6 +14520,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (109)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -13781,6 +14598,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -13888,6 +14709,10 @@ PrefabInstance:
       value: Stalacostam1 (28)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -13947,6 +14772,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (148)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -14027,6 +14856,10 @@ PrefabInstance:
       value: Stalacostam (36)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -14091,6 +14924,10 @@ PrefabInstance:
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_Name
       value: Kmienie (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
@@ -14159,6 +14996,10 @@ PrefabInstance:
       value: Stalacostam1 (63)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -14223,6 +15064,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -14291,6 +15136,10 @@ PrefabInstance:
       value: Stalacostam1 (16)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -14357,6 +15206,10 @@ PrefabInstance:
       value: Stalacostam (147)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -14421,6 +15274,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -14532,6 +15389,10 @@ PrefabInstance:
       value: Stalacostam1 (28)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -14547,6 +15408,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3184321536055613837, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
   m_PrefabInstance: {fileID: 804762138}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1250274419 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1250274419, guid: 37bf142896a6c7641a4a813b530d262c, type: 3}
+  m_PrefabInstance: {fileID: 1266093945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1251885397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14607,6 +15479,10 @@ PrefabInstance:
       value: Stalacostam1 (49)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -14627,6 +15503,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -14844,6 +15724,10 @@ PrefabInstance:
       value: Stalacostam (70)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -14908,6 +15792,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (150)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -14976,6 +15864,10 @@ PrefabInstance:
       value: Stalacostam1 (33)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -15040,6 +15932,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -15108,6 +16004,10 @@ PrefabInstance:
       value: Stalacostam (106)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -15174,6 +16074,10 @@ PrefabInstance:
       value: Stalacostam1 (30)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -15199,6 +16103,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -15306,6 +16214,10 @@ PrefabInstance:
       value: Stalacostam1 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -15377,6 +16289,10 @@ PrefabInstance:
       value: Kolumna (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -15438,6 +16354,10 @@ PrefabInstance:
       value: Kmienie (53)
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -15458,6 +16378,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -15591,6 +16515,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -38480,11 +39408,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.55
+      value: 5.74
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38492,7 +39420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -78.420006
+      value: -68.29
       objectReference: {fileID: 0}
     - target: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38589,6 +39517,10 @@ PrefabInstance:
       value: Stalacostam (43)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -38655,6 +39587,10 @@ PrefabInstance:
       value: Stalacostam (7)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -38719,6 +39655,10 @@ PrefabInstance:
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_Name
       value: Kmienie (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
@@ -38809,6 +39749,10 @@ PrefabInstance:
       value: Stalacostam (68)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -38829,6 +39773,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -38934,6 +39882,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -39224,6 +40176,10 @@ PrefabInstance:
       value: Stalacostam1 (39)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -39302,6 +40258,10 @@ PrefabInstance:
       value: Kolumna (18)
       objectReference: {fileID: 0}
     - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -39322,6 +40282,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -39500,6 +40464,10 @@ PrefabInstance:
       value: Stalacostam1 (23)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -39564,6 +40532,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (105)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -39775,6 +40747,10 @@ PrefabInstance:
       value: Stalacostam (87)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -39841,6 +40817,10 @@ PrefabInstance:
       value: Stalacostam1 (25)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -39900,6 +40880,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -39966,6 +40950,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -40106,6 +41094,10 @@ PrefabInstance:
       value: Stalacostam (77)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -40184,6 +41176,10 @@ PrefabInstance:
       value: Stalacostam1 (13)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -40209,6 +41205,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -40321,6 +41321,10 @@ PrefabInstance:
       value: Stalacostam (86)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -40385,6 +41389,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -40475,6 +41483,10 @@ PrefabInstance:
       value: Stalacostam1 (29)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -40490,6 +41502,10 @@ PrefabInstance:
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_Name
       value: skalka (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_NavMeshLayer
@@ -40560,6 +41576,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -40667,6 +41687,10 @@ PrefabInstance:
       value: Stalacostam (13)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -40737,6 +41761,10 @@ PrefabInstance:
       value: Stalacostam (90)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -40801,6 +41829,10 @@ PrefabInstance:
     - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
       propertyPath: m_Name
       value: Kolumna (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
       propertyPath: m_NavMeshLayer
@@ -40869,6 +41901,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a6012345e0801d45a47011cc5bebae8, type: 3}
+--- !u!1001 &1480890856
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1913931914}
+    m_Modifications:
+    - target: {fileID: 2966003745571219889, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+      propertyPath: m_Name
+      value: LevelManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966003745571219895, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966003745571219895, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966003745571219895, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966003745571219895, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966003745571219895, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966003745571219895, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966003745571219895, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966003745571219895, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966003745571219895, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966003745571219895, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966003745571219895, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+--- !u!4 &1480890857 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2966003745571219895, guid: 998696ca4a31bc94f84d4f7c5f615b5b, type: 3}
+  m_PrefabInstance: {fileID: 1480890856}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1482992168
 GameObject:
   m_ObjectHideFlags: 0
@@ -40913,6 +42007,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 705743823, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 705743826, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_ColorTemperature
       value: 20000
@@ -40921,6 +42019,26 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 1054384459}
+    - target: {fileID: 1999924775, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 833389048}
+    - target: {fileID: 1999924775, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: nickText
+      value: 
+      objectReference: {fileID: 158180504}
+    - target: {fileID: 1999924775, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1250274419}
+    - target: {fileID: 32351384403895849, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 165885532149279382, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 530160029925062365, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_Range
       value: 10
@@ -40932,6 +42050,22 @@ PrefabInstance:
     - target: {fileID: 530160029925062365, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_SpotAngle
       value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 906089568711087489, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105487353781679834, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353062579962404669, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579379830387623019, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2120462032548349255, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_RootOrder
@@ -40977,17 +42111,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2427533230515684857, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737585187810248145, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867265905766771421, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912558823442341140, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3030908531431942864, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159131686670377725, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3588967943363248464, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639785002875013191, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935890598378962331, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014115640950332840, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4314234760366514209, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_Intensity
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 4481991257199059228, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867644050322965912, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5123856537331278950, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_TrackedObjectOffset.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123856537590461337, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5123856537590461340, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: Offset.y
@@ -41054,16 +42236,68 @@ PrefabInstance:
       value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 5179014275500602127, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5179014275500602127, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618083123576603404, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658595864887547405, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158879991941831771, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7152622936156220516, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427882625797483444, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7483204579132864881, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_Name
       value: PlayerObjects
       objectReference: {fileID: 0}
+    - target: {fileID: 7498055336056725649, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7884011799999010833, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7884011799999010833, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000585066919773683, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029448071848133149, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484854416005079107, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8794688023687322963, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909657705176192815, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8962442191893700504, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -41076,6 +42310,10 @@ PrefabInstance:
     - target: {fileID: 8962442191893700504, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9041463414048539863, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
@@ -41146,6 +42384,10 @@ PrefabInstance:
       value: Stalacostam (45)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -41210,6 +42452,10 @@ PrefabInstance:
     - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
       propertyPath: m_Name
       value: beczka (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
       propertyPath: m_NavMeshLayer
@@ -41285,6 +42531,10 @@ PrefabInstance:
       value: Stalacostam (20)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -41304,7 +42554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1510665907}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Kolumna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41482,6 +42732,10 @@ PrefabInstance:
       value: Stalacostam (15)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -41507,6 +42761,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -41619,6 +42877,10 @@ PrefabInstance:
       value: Stalacostam1 (60)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -41683,6 +42945,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -41751,6 +43017,10 @@ PrefabInstance:
       value: Stalacostam (32)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -41771,6 +43041,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -41883,6 +43157,10 @@ PrefabInstance:
       value: Stalacostam (41)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -41908,6 +43186,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -41969,6 +43251,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -42085,6 +43371,10 @@ PrefabInstance:
       value: beczka (5)
       objectReference: {fileID: 0}
     - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -42144,6 +43434,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (111)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -42274,6 +43568,10 @@ PrefabInstance:
       value: Stalacostam (110)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -42338,6 +43636,10 @@ PrefabInstance:
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_Name
       value: Kmienie (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
@@ -42406,6 +43708,10 @@ PrefabInstance:
       value: Stalacostam1 (43)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -42470,6 +43776,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -42538,6 +43848,10 @@ PrefabInstance:
       value: Kolumna (6)
       objectReference: {fileID: 0}
     - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675786201562426307, guid: 125a2cf833a728c4688d9855add729d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -42597,6 +43911,10 @@ PrefabInstance:
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_Name
       value: Kmienie (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
@@ -42663,6 +43981,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -42815,6 +44137,10 @@ PrefabInstance:
       value: Stalacostam (101)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -42886,6 +44212,10 @@ PrefabInstance:
       value: Stalacostam1 (44)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -42952,6 +44282,10 @@ PrefabInstance:
       value: Stalacostam (83)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -42972,6 +44306,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -43033,6 +44371,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -43149,6 +44491,10 @@ PrefabInstance:
       value: Stalacostam (38)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -43213,6 +44559,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -43281,6 +44631,10 @@ PrefabInstance:
       value: Stalacostam (39)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -43340,6 +44694,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -43408,6 +44766,10 @@ PrefabInstance:
       value: Stalacostam (85)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -43472,6 +44834,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -43540,6 +44906,10 @@ PrefabInstance:
       value: Stalacostam1 (24)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -43606,6 +44976,10 @@ PrefabInstance:
       value: Stalacostam1 (6)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -43631,6 +45005,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -43738,6 +45116,10 @@ PrefabInstance:
       value: Kmienie (5)
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -43768,6 +45150,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -43834,6 +45220,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -43958,6 +45348,10 @@ PrefabInstance:
       value: Stalacostam1 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -44036,6 +45430,10 @@ PrefabInstance:
       value: Stalacostam1 (57)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -44100,6 +45498,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (123)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -44173,6 +45575,10 @@ PrefabInstance:
       value: Stalacostam (42)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -44232,6 +45638,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -44305,6 +45715,10 @@ PrefabInstance:
       value: Stalacostam1 (29)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -44369,6 +45783,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -44519,6 +45937,10 @@ PrefabInstance:
       value: Stalacostam (100)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -44539,6 +45961,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -44605,6 +46031,10 @@ PrefabInstance:
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_Name
       value: skalka (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_NavMeshLayer
@@ -44733,6 +46163,10 @@ PrefabInstance:
       value: Stalacostam (99)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -44797,6 +46231,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -44877,6 +46315,10 @@ PrefabInstance:
       value: Stalacostam (38)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -44907,6 +46349,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -44987,6 +46433,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1395794244}
+  - {fileID: 1480890857}
+  - {fileID: 810463016}
+  - {fileID: 19733990}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45005,6 +46454,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -45068,8 +46521,9 @@ GameObject:
   - component: {fileID: 1924838408}
   - component: {fileID: 1924838407}
   - component: {fileID: 1924838406}
+  - component: {fileID: 1924838409}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: TriggerAreaFirstEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45153,6 +46607,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924838404}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1924838409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924838404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65fcc25ef7429dc4bb2afe6084f508df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FirstEnemy: {fileID: 191786375}
+  DialoguePanel: {fileID: 1054384459}
+  dialogueName: Tutorial_First_Enemy
 --- !u!1001 &1927936507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45219,6 +46688,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -45493,6 +46966,10 @@ PrefabInstance:
       value: Stalacostam1 (72)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -45557,6 +47034,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -45697,6 +47178,10 @@ PrefabInstance:
       value: Stalacostam (51)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -45761,6 +47246,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -45841,6 +47330,10 @@ PrefabInstance:
       value: Stalacostam1 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -45861,6 +47354,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -45922,6 +47419,10 @@ PrefabInstance:
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_Name
       value: skalka (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_NavMeshLayer
@@ -46044,6 +47545,10 @@ PrefabInstance:
       value: Stalacostam1 (62)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -46108,6 +47613,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (124)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -46186,6 +47695,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -46328,6 +47841,10 @@ PrefabInstance:
       value: Stalacostam (59)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -46348,6 +47865,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -46460,6 +47981,10 @@ PrefabInstance:
       value: beczka (4)
       objectReference: {fileID: 0}
     - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -46521,6 +48046,10 @@ PrefabInstance:
       value: beczka (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795602194087963722, guid: 9b313737b0ffee44c9fd59099b71a162, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -46536,6 +48065,10 @@ PrefabInstance:
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_Name
       value: Scana (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
@@ -46599,6 +48132,10 @@ PrefabInstance:
       value: Scana (36)
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -46660,6 +48197,10 @@ PrefabInstance:
       value: Scana (48)
       objectReference: {fileID: 0}
     - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844915127613440823, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -46719,6 +48260,10 @@ PrefabInstance:
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_Name
       value: skalka (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_NavMeshLayer
@@ -46846,6 +48391,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -46979,9 +48528,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7142645790013098041, guid: 3b548699f7fcfe045bb416ac7e5be5f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7431036355919378710, guid: 3b548699f7fcfe045bb416ac7e5be5f7, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: FirstEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431036355919378710, guid: 3b548699f7fcfe045bb416ac7e5be5f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b548699f7fcfe045bb416ac7e5be5f7, type: 3}
@@ -47044,6 +48601,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -47186,6 +48747,10 @@ PrefabInstance:
       value: Stalacostam1 (55)
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -47264,6 +48829,10 @@ PrefabInstance:
       value: Stalacostam (39)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -47328,6 +48897,10 @@ PrefabInstance:
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_Name
       value: Stalacostam1 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2059400778346692620, guid: 13c4c0349a7a82847bade011d92fcf8c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -47413,6 +48986,10 @@ PrefabInstance:
       value: Stalacostam (16)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -47477,6 +49054,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -47557,6 +49138,10 @@ PrefabInstance:
       value: Stalacostam (69)
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -47633,6 +49218,10 @@ PrefabInstance:
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_Name
       value: Stalacostam (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7570618752495008754, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -47775,6 +49364,10 @@ PrefabInstance:
       value: Kmienie
       objectReference: {fileID: 0}
     - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853202278947032287, guid: e65cbb365b9291f44abf89ba41010302, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -47795,6 +49388,10 @@ PrefabInstance:
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_Name
       value: skalka
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7337949676585305111, guid: d3579bd6af5622148b3102df4920c0a0, type: 3}
       propertyPath: m_NavMeshLayer
@@ -47990,6 +49587,10 @@ PrefabInstance:
     - target: {fileID: 6670602137821725014, guid: 265da817e63daa64faf3c315a1a101d5, type: 3}
       propertyPath: m_Name
       value: Brama
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670602137821725014, guid: 265da817e63daa64faf3c315a1a101d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6670602137821725014, guid: 265da817e63daa64faf3c315a1a101d5, type: 3}
       propertyPath: m_NavMeshLayer

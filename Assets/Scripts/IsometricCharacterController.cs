@@ -69,8 +69,18 @@ public class IsometricCharacterController : MonoBehaviour
         {
             return;
         }
+
         if (GameManager.Instance.isGamePaused)
             return;
+        if (GameManager.Instance.isGameFrozen)
+        {
+            if (!_animator.GetNextAnimatorStateInfo(0).IsName("Idle"))
+            {
+                _animator.CrossFade("Idle", 0.1f);
+
+            }
+            return;
+        }
         if (playerLight.GetCurrentIntensity() <= 0f)
         {
             _isDead= true;
@@ -110,6 +120,8 @@ public class IsometricCharacterController : MonoBehaviour
     }
     private void RunEverySecondEvent()
     {
+        if (GameManager.Instance.isGameFrozen)
+            return;
         playerLight.ChangeCurrentIntensity(_isSprinting ? -playerLight.intensityTakenPerTick*3f : -playerLight.intensityTakenPerTick);
         GameManager.Instance.SavePlayerPosition(this.transform.position);
         EverySecond?.Invoke();

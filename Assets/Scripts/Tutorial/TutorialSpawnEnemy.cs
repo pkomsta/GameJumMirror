@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class TutorialSpawnEnemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+    public GameObject FirstEnemy;
+    public GameObject DialoguePanel;
+    public string dialogueName;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("Player"))
+        {
+            FirstEnemy.gameObject.SetActive(true);
+            GameManager.Instance.FreezeGame();
+            other.GetComponent<DialogueManager>().StartDialogueWithUnFreeze(dialogueName);
+            gameObject.SetActive(false);
+
+        }
     }
 }

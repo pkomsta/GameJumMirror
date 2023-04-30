@@ -35,7 +35,7 @@ public class ChaseState : State
 
         float distance = Vector3.Distance(enemy.lastSeenPos, enemy.transform.position);
         //Debug.Log("Distance " + distance + "enemy pos " + enemy.transform.position + " player pos " + enemy.lastSeenPos);
-        if (distance < 1.1f && !enemy.canSeePlayer)
+        if (distance < 1.05f && !enemy.canSeePlayer)
         {
             enemy.ChangeState(enemy.patrol);
         }

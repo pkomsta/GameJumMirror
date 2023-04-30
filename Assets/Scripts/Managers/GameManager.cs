@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public GameObject player;
-    public bool isGamePaused;
+    public bool isGamePaused = false;  
+    public bool isGameFrozen = false;
     public GameObject UIMenu;
     public CurrentLevel currentLevel = CurrentLevel.level1;
     public Dictionary<CurrentLevel,List<Vector3>> shadowFolowPathsDict;
@@ -43,6 +44,19 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame();
+        }
+    }
+
+    public void FreezeGame()
+    {
+        if (isGameFrozen)
+        {
+            isGameFrozen = false;
+
+        }
+        else
+        {
+            isGameFrozen = true;
         }
     }
 
