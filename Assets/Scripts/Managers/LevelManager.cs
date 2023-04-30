@@ -26,4 +26,12 @@ public class LevelManager : MonoBehaviour
     {
         Application.Quit();
     }
+    public static void LoadGoodEnd()
+    {
+        SceneManager.LoadScene(5);
+    }
+    public static void LoadBadEnd()
+    {
+        SceneManager.LoadScene(4);
+    }
 }

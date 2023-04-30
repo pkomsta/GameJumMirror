@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8181147867103291817}
-  - component: {fileID: 8181147867103291816}
   - component: {fileID: -3182824530089999362}
+  - component: {fileID: 2598485643545893428}
   m_Layer: 0
   m_Name: DialogueTriggerEvent
   m_TagString: Finish
@@ -33,20 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &8181147867103291816
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8181147867103291819}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.8281679
-  m_Height: 2.7796273
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.057944298, z: 0}
 --- !u!114 &-3182824530089999362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,3 +49,16 @@ MonoBehaviour:
   OnDialogueEnd:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &2598485643545893428
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181147867103291819}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}

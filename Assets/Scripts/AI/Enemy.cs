@@ -13,10 +13,8 @@ public class Enemy : MonoBehaviour
     public string Name { get; }
     public bool InstaKills = false;
 
-    [SerializeField] protected AudioClip[] movmentSound;
-    [SerializeField] protected AudioClip[] attackSound;
-    [SerializeField] protected AudioClip[] deathSound;
-    [SerializeField] protected AudioClip[] takeDamageSound;
+    [SerializeField] protected AudioClip[] randomSound;
+
     [SerializeField] protected Transform attackPoint;
 
     protected int _health;
@@ -115,14 +113,18 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         _animator = this.GetComponent<Animator>();
-       // _audioSource = GetComponent<AudioSource>();
+        _audioSource = GetComponent<AudioSource>();
         _pathIndex = 0;
         _forwardFlag = true;
         navMeshAgent = GetComponent<NavMeshAgent>();
         playerRef = GameManager.Instance.GetPlayer();
         ChangeState(patrol);
         //StartCoroutine(FOVRoutine());
-
+        InvokeRepeating(nameof(PlayEnemySound), 1f, 20f);
+    }
+    public void PlayEnemySound()
+    {
+        SoundManager.Instance.PlayOneShotOnGivenAudioSource(_audioSource, randomSound);
     }
 
     /* Old way of finding player

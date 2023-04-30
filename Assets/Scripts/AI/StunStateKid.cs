@@ -12,6 +12,7 @@ public class StunStateKid : State
     public override void StartState(Enemy enemy)
     {
         //load level or something
+        LevelManager.LoadGoodEnd();
     }
 
     public override void UpdateState(Enemy enemy)

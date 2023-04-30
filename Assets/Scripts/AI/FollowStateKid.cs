@@ -17,7 +17,7 @@ public class FollowStateKid : State
     public override void UpdateState(Enemy enemy)
     {
         if (!started) { return; }
-        if (player.IsDead()) { }
+        if (Vector3.Distance(enemy.transform.position,player.transform.position ) < 1.5f) { LevelManager.LoadBadEnd(); }
 
         
         enemy.navMeshAgent.SetDestination(player.transform.position); 
