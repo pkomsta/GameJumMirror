@@ -19,7 +19,7 @@ public class IsometricCharacterController : MonoBehaviour
     [SerializeField] private float _pickUpRadius = 5f;
     [SerializeField] Transform CameraObject;
     [SerializeField] private float rotationSpeed = 2f;
-    private PlayerLight playerLight;
+    public PlayerLight playerLight;
   
     public UnityEvent OnStartMoving;
     public UnityEvent OnStopMoving;
@@ -59,7 +59,7 @@ public class IsometricCharacterController : MonoBehaviour
         _animator = this.GetComponent<Animator>();
         MirrorPointLight.range = MirrorRadius * 1.25f;
         playerLight = this.GetComponent<PlayerLight>();
-
+        MirrorUsesLeft = GameManager.mirrorUsesLeft;
         InvokeRepeating(nameof(RunEverySecondEvent), 0, 1f);
 
     }
@@ -69,8 +69,18 @@ public class IsometricCharacterController : MonoBehaviour
         {
             return;
         }
+
         if (GameManager.Instance.isGamePaused)
             return;
+        if (GameManager.Instance.isGameFrozen)
+        {
+            if (!_animator.GetNextAnimatorStateInfo(0).IsName("Idle"))
+            {
+                _animator.CrossFade("Idle", 0.1f);
+
+            }
+            return;
+        }
         if (playerLight.GetCurrentIntensity() <= 0f)
         {
             _isDead= true;
@@ -110,6 +120,8 @@ public class IsometricCharacterController : MonoBehaviour
     }
     private void RunEverySecondEvent()
     {
+        if (GameManager.Instance.isGameFrozen)
+            return;
         playerLight.ChangeCurrentIntensity(_isSprinting ? -playerLight.intensityTakenPerTick*3f : -playerLight.intensityTakenPerTick);
         GameManager.Instance.SavePlayerPosition(this.transform.position);
         EverySecond?.Invoke();
@@ -298,11 +310,13 @@ public class IsometricCharacterController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (MirrorUsesLeft < 1)
+            if (GameManager.mirrorUsesLeft < 1)
                 return;
-            MirrorMeter.instance.ChangeMirrorUI();
+            if(MirrorMeter.instance != null)
+                MirrorMeter.instance.ChangeMirrorUI();
+
             MirrorPointLight.intensity = LightMaxIntensity;
-            MirrorUsesLeft--;
+            GameManager.mirrorUsesLeft--;
             StartCoroutine(DimMirrorLigth());
             Collider[] _targetsWithinDistance;
             _targetsWithinDistance = Physics.OverlapSphere(Center, MirrorRadius, TargetMask);

@@ -43,7 +43,7 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public bool _forwardFlag;
 
-    [HideInInspector]
+    //[HideInInspector]
     public List<Transform> _path;
     //states
     public State patrol;
@@ -77,6 +77,7 @@ public class Enemy : MonoBehaviour
     [Header("Reward Location")]
     public Transform deathDisplayTransform;
 
+    [SerializeField]
     protected State currentState;
     protected bool IsDead = false;
     protected AudioSource _audioSource;
@@ -162,7 +163,8 @@ public class Enemy : MonoBehaviour
 
     private void CreatePath()
     {
-        Transform[] pathPointers =  GetComponentsInChildren<Transform>();
+        Transform[] pathPointers = PathHeader.GetComponentsInChildren<Transform>();
+        _path = new List<Transform>();
         foreach(Transform tr in pathPointers)
         {
             if(tr != PathHeader.transform)
@@ -175,6 +177,12 @@ public class Enemy : MonoBehaviour
     private void LateUpdate()
     {
         if (IsDead) return;
+
+        if (GameManager.Instance.isGameFrozen || GameManager.Instance.isGamePaused)
+        {
+            navMeshAgent.SetDestination(transform.position);
+            return;
+        }
         currentState.UpdateState(this);
     }
 

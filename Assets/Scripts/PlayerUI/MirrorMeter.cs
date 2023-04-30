@@ -28,6 +28,30 @@ public class MirrorMeter : MonoBehaviour
         ChangeMirrorState();
     }
 
+    public void ActivateMirrorUI()
+    {
+        ShowUsesLeft();
+        SetMirrorState();
+
+    }
+    private void ShowUsesLeft()
+    {
+
+        for(int index = MirrorUses.Length -1; index>=GameManager.mirrorUsesLeft; index--)
+        {
+            MirrorUses[index].SetActive(false);
+        }
+    }
+
+    private void SetMirrorState()
+    {
+        if (GameManager.mirrorUsesLeft == 4)
+            return;
+        indexSprite = 4 - GameManager.mirrorUsesLeft + 1;
+        image.sprite = MirrorStates[indexSprite];
+        indexSprite++;
+    }
+
     private void DecreaseMirrorUses()
     {
         MirrorUses[indexUses].SetActive(false);

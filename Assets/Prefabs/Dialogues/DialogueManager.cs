@@ -14,7 +14,7 @@ public class DialogueManager : MonoBehaviour
     private int currentIndex = 0;
     public Animator animator;
     bool isTyping = false;
-
+    bool unFreezeFlag = false;
     GameObject usedTrigger;
     Coroutine coroutine;
     public IEnumerator waitAndWriteLetter(float delay, int index)
@@ -88,10 +88,31 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(waitAndWriteLetter(0.2f, 0));
     }
 
+    public void StartDialogueWithUnFreeze(string dialogueNameWithExtention)
+    {
+        if (isTyping)
+            return;
+        unFreezeFlag = true;
+        isTyping = true;
+        panel.SetActive(true);
+        string filePath = Application.streamingAssetsPath
+                              + "/Dialogues/" + dialogueNameWithExtention;
+        lines = File.ReadAllLines(filePath);
+        StartCoroutine(waitAndWriteLetter(0.2f, 0));
+    }
+
     public void CloseDialogue()
     {
+        if (unFreezeFlag)
+        {
+            unFreezeFlag = false;
+            GameManager.Instance.FreezeGame();
+        }
+
         isTyping = false;
-        usedTrigger.SetActive(true);
+        if(usedTrigger != null)
+            usedTrigger.SetActive(true);
+
         panel.SetActive(false);
         dialogueText.text = "";
         nickText.text = "";

@@ -15,7 +15,8 @@ public class PatrolState : State
     public override void UpdateState(Enemy enemy)
     {
         float distance = Vector3.Distance(enemy.navMeshAgent.destination, enemy._floorPointer.position);
-        if (distance < 0.2f)
+        //Debug.Log(distance);
+        if (distance < 0.005f)
         {
 
             if (enemy._forwardFlag)
@@ -28,7 +29,7 @@ public class PatrolState : State
                     enemy._forwardFlag = false;
                 }
             }
-            if (!enemy._forwardFlag)
+            else if (!enemy._forwardFlag)
             {
                 if(enemy._pathIndex > 0)
                     enemy._pathIndex--;

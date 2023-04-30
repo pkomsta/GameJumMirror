@@ -266,7 +266,7 @@ using System;
 
         if (Physics.Raycast(Center, _direction, out _raycastAtAngleHit, VisionRadius, ObstacleMask))
         {
-            Debug.Log("ObstacleHit");
+            //Debug.Log("ObstacleHit");
             _returnRaycastData.Hit = true;
             _returnRaycastData.Point = _raycastAtAngleHit.point;
             _returnRaycastData.Distance = _raycastAtAngleHit.distance;
