@@ -11,7 +11,7 @@ public class EverySecondEvent : UnityEvent<Enemy>
 public class Enemy : MonoBehaviour
 {
     public string Name { get; }
-
+    public bool InstaKills = false;
 
     [SerializeField] protected AudioClip[] movmentSound;
     [SerializeField] protected AudioClip[] attackSound;
@@ -286,7 +286,14 @@ public class Enemy : MonoBehaviour
     }
 
 
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(!InstaKills) { return; }
+        if (collision.gameObject.TryGetComponent<IsometricCharacterController>(out IsometricCharacterController player))
+        {
+            player.KillPlayer();
+        }
+    }
 
 
 }

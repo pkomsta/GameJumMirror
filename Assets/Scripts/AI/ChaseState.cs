@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class ChaseState : State
 {
-    
+    [SerializeField] float DamageTime = 1f;
+    [SerializeField] float Damage = 25f;
     public override void StartState(Enemy enemy)
     {
         enemy.coneOfVision.MeshRenderer.material = enemy.coneOfVision.Materials[2];
         enemy.coneOfVision.VisionRadius = enemy.coneOfVision.VisionRadiusBig;
         enemy.navMeshAgent.speed = 3f;
+        InvokeRepeating(nameof(AttackPlayer), DamageTime, DamageTime);
     }
 
     public override void UpdateState(Enemy enemy)
@@ -46,9 +48,26 @@ public class ChaseState : State
             enemy.ChangeState(enemy.patrol);
         }
     }
-
+    private void AttackPlayer()
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, 1.5f);
+        foreach(Collider collider in hitColliders)
+        {
+            if(collider.gameObject.TryGetComponent<IsometricCharacterController>(out IsometricCharacterController player))
+            {
+                player.TakeHit(Damage);
+            }
+        }
+        
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(transform.position, 1.5f);
+    }
     public override void ExitState(Enemy enemy)
     {
+        CancelInvoke();
         enemy.previousState = enemy.chase;
     }
 }

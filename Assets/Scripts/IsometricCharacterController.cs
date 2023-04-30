@@ -360,4 +360,8 @@ public class IsometricCharacterController : MonoBehaviour
     {
         playerLight.ChangeCurrentIntensity(value);
     }
+    public void KillPlayer()
+    {
+        _isDead = true;
+    }
 }
