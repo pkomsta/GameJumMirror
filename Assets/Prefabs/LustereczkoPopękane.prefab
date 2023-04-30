@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1402274990953454259}
   - component: {fileID: 2655498951058183446}
   - component: {fileID: 233850111945220572}
+  - component: {fileID: 9111429552283082982}
   m_Layer: 0
   m_Name: "LustereczkoPop\u0119kane"
   m_TagString: Untagged
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9111429552283082982
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746887582131781641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03526077, y: 0.028558688, z: 0.0014526034}
+  m_Center: {x: 0.0050760005, y: -0.005575505, z: 0.0008290077}

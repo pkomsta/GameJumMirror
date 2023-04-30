@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1066198460125169461}
   - component: {fileID: 4135498858230401168}
   - component: {fileID: 2197977641868049498}
+  - component: {fileID: -296673297811525585}
   m_Layer: 0
   m_Name: Lustro2
   m_TagString: Untagged
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-296673297811525585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396375544396258703}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.003158949, y: 0.03974746, z: 0.06861088}
+  m_Center: {x: 0.0000058424766, y: -0.0000010589159, z: 0.000057525933}
