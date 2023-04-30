@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.03299176, g: 0.020900372, b: 0.017880963, a: 1}
+  m_IndirectSpecularColor: {r: 0.032970596, g: 0.020888835, b: 0.017883562, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1627,7 +1627,6 @@ MonoBehaviour:
   m_Script: {fileID: 603941861}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &42878511
 Transform:
   m_ObjectHideFlags: 19
@@ -37217,6 +37216,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3184321536055613837, guid: 8c4b47c596967f54da3ffa3633f98401, type: 3}
   m_PrefabInstance: {fileID: 1126101217}
   m_PrefabAsset: {fileID: 0}
+--- !u!108 &1127398128 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 705743826, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+  m_PrefabInstance: {fileID: 1503297278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1129596182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7087519064105443656, guid: 62bcb1b2ba884094fafce1a26830370a, type: 3}
@@ -72238,7 +72242,7 @@ PrefabInstance:
     - target: {fileID: 5123856537590461340, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: MirrorPointLight
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1127398128}
     - target: {fileID: 5123856537590461340, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: LightMaxIntensity
       value: 200
