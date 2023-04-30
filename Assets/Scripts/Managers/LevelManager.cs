@@ -33,10 +33,10 @@ public class LevelManager : MonoBehaviour
     }
     public static void LoadGoodEnd()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(4);
     }
     public static void LoadBadEnd()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
 }
