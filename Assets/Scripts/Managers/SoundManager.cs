@@ -42,7 +42,7 @@ public class SoundManager : MonoBehaviour
             PlayMusic(MusicSource.clip);
         }
     }
-    public void Play(AudioClip clip)
+    public void PlaySFX(AudioClip clip)
     {
         EffectsSource.volume = effectVolume * masterVolume;
         EffectsSource.clip = clip;
@@ -99,6 +99,15 @@ public class SoundManager : MonoBehaviour
         musicVolume = music;
 
         VolumeChanged();
+    }
+
+    public bool IsSFXPlaying()
+    {
+        return EffectsSource.isPlaying;
+    }
+    public bool IsMusicPlaying()
+    {
+        return MusicSource.isPlaying;
     }
     IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
     {

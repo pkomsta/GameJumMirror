@@ -15,6 +15,11 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public static int GetActiveSceneBuildIndex()
+    {
+        return SceneManager.GetActiveScene().buildIndex;
+    }
+
     public static void ExitGame()
     {
         Application.Quit();
