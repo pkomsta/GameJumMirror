@@ -1089,6 +1089,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5123856537590461337, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
   m_PrefabInstance: {fileID: 3239983961447089255}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1999924769 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1999924775, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+  m_PrefabInstance: {fileID: 3239983961447089255}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999924768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f5cac2f1f577340932aef629734e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2011301866 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 66937491026459523, guid: 7051550528e88f5458db32cacf0328aa, type: 3}
@@ -1272,17 +1283,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5123856537093465113, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
-      propertyPath: m_Constraints
-      value: 84
-      objectReference: {fileID: 0}
-    - target: {fileID: 5123856537590461337, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7483204579132864881, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
       propertyPath: m_Name
       value: PlayerObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 7651120495848579564, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1999924769}
+    - target: {fileID: 7651120495848579564, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7651120495848579564, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89255370129b6d94689cdecf27ea23a5, type: 3}

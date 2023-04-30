@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     private string[] lines;
     private string[] dividedLine;
     private int currentIndex = 0;
+    public Animator animator;
 
     Coroutine coroutine;
     public IEnumerator waitAndWriteLetter(float delay, int index)
@@ -21,6 +22,20 @@ public class DialogueManager : MonoBehaviour
         {
             yield return new WaitForSeconds(delay);
             lines[currentIndex] = string.Join(" ", dividedLine.Take(index + 1).ToArray());
+
+            if (lines[currentIndex].Contains("{"))
+            {
+                int start = lines[currentIndex].LastIndexOf("{");
+                int end = lines[currentIndex].LastIndexOf("}") + 1;
+
+                nickText.text = lines[currentIndex].Substring(start + 1, end - 2);
+
+                lines[currentIndex] = lines[currentIndex]
+                                      .Replace(lines[currentIndex]
+                                      .Substring(start, end), "");
+            }
+
+            dialogueText.text = lines[currentIndex];
             index++;
         }
 
@@ -44,26 +59,7 @@ public class DialogueManager : MonoBehaviour
                                           .Replace("#END", "");
                     CloseDialogue();
                 }
-                else if (lines[currentIndex].Contains("{"))
-                {
-                    int start = lines[currentIndex].LastIndexOf("{");
-                    int end = lines[currentIndex].LastIndexOf("}") + 1;
 
-                    nickText.text = lines[currentIndex].Substring(start + 1, end - 2);
-
-                    lines[currentIndex] = lines[currentIndex]
-                                          .Replace(lines[currentIndex]
-                                          .Substring(start, end), "");
-                }
-
-
-                dialogueText.text = lines[currentIndex];
-                if(!isTyping)
-                {
-                    coroutine = StartCoroutine(waitAndWriteLetter(0.2f, 0));
-                    isTyping = true;
-                }
-                
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     NextLine();
@@ -75,6 +71,7 @@ public class DialogueManager : MonoBehaviour
     public void NextLine()
     {
         currentIndex++;
+        StartCoroutine(waitAndWriteLetter(0.2f, 0));
     }
 
     public void StartDialogue(string dialogueNameWithExtention)
@@ -83,6 +80,7 @@ public class DialogueManager : MonoBehaviour
         string filePath = Application.streamingAssetsPath
                               + "/Dialogues/" + dialogueNameWithExtention;
         lines = File.ReadAllLines(filePath);
+        StartCoroutine(waitAndWriteLetter(0.2f, 0));
     }
 
     public void CloseDialogue()
