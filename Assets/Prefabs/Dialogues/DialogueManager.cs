@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class DialogueManager : MonoBehaviour
     bool unFreezeFlag = false;
     GameObject usedTrigger;
     Coroutine coroutine;
+    public UnityEvent OnCloseDialogue;
     public IEnumerator waitAndWriteLetter(float delay, int index)
     {
         dividedLine = lines[currentIndex].Split();
@@ -117,5 +119,6 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         nickText.text = "";
         currentIndex = 0;
+        OnCloseDialogue?.Invoke();
     }
 }

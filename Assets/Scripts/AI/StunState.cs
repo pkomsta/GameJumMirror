@@ -9,12 +9,17 @@ public class StunState : State
     public override void StartState(Enemy enemy)
     {
         CancelInvoke();
-        MMConeOfVision cone = enemy.coneOfVision;
+        if(enemy.coneOfVision!= null)
+        {
+            MMConeOfVision cone = enemy.coneOfVision;
+            con = cone;
+            cone.MeshRenderer.enabled = false;
+            cone.enabled = false;
+            en.canSeePlayer = false;
+        }
+       
         en = enemy;
-        con = cone;
-        cone.MeshRenderer.enabled = false;
-        cone.enabled = false;
-        en.canSeePlayer = false;
+        
         en.navMeshAgent.SetDestination(en.transform.position);
         Debug.Log("Stunned!");
         if (!enemy.GetAnimator().GetNextAnimatorStateInfo(0).IsName("Monster_Stun"))
@@ -27,8 +32,12 @@ public class StunState : State
 
     void TurnOnVision()
     {
-        con.enabled = true;
-        con.MeshRenderer.enabled = true;
+        if(con !=null)
+        {
+            con.enabled = true;
+            con.MeshRenderer.enabled = true;
+        }
+        
 
         if(en.previousState == en.chase)
             en.ChangeState(en.chase);
