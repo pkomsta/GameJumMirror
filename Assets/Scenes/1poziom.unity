@@ -26777,22 +26777,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicManager
       objectReference: {fileID: 0}
-    - target: {fileID: 9082268045081501356, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
-      propertyPath: musicLvl1.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9082268045081501356, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
-      propertyPath: musicLvl2.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9082268045081501356, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
-      propertyPath: musicLvl3.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9082268045081501356, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
-      propertyPath: musicLvl4.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f9be2ff48381814cb3a1d51b4ad8d45, type: 3}
 --- !u!1001 &846822397
