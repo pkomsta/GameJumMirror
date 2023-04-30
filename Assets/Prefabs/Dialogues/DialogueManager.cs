@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -12,19 +13,25 @@ public class DialogueManager : MonoBehaviour
     private string[] dividedLine;
     private int currentIndex = 0;
 
+    Coroutine coroutine;
     public IEnumerator waitAndWriteLetter(float delay, int index)
     {
         dividedLine = lines[currentIndex].Split();
-        yield return new WaitForSeconds(delay);
-        lines[currentIndex] = dividedLine[index];
-        index++;
-        StartCoroutine(waitAndWriteLetter(0.2f, index));
-        if (lines[currentIndex].Length < dividedLine.Length)
+        while (index < dividedLine.Length)
         {
-            StopCoroutine("waitAndWriteLetter");
+            yield return new WaitForSeconds(delay);
+            lines[currentIndex] = string.Join(" ", dividedLine.Take(index + 1).ToArray());
+            index++;
+        }
+
+        if(currentIndex == dividedLine.Length)
+        {
+            StopCoroutine(coroutine);
+            isTyping = false;
         }
     }
 
+    bool isTyping = false;
     private void Update()
     {
         if(lines != null)
@@ -49,6 +56,14 @@ public class DialogueManager : MonoBehaviour
                                           .Substring(start, end), "");
                 }
 
+
+                dialogueText.text = lines[currentIndex];
+                if(!isTyping)
+                {
+                    coroutine = StartCoroutine(waitAndWriteLetter(0.2f, 0));
+                    isTyping = true;
+                }
+                
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     NextLine();
@@ -64,7 +79,6 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(string dialogueNameWithExtention)
     {
-        StartCoroutine(waitAndWriteLetter(0.2f, 0));
         panel.SetActive(true);
         string filePath = Application.streamingAssetsPath
                               + "/Dialogues/" + dialogueNameWithExtention;
