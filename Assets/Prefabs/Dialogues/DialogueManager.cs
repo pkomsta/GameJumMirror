@@ -13,7 +13,9 @@ public class DialogueManager : MonoBehaviour
     private string[] dividedLine;
     private int currentIndex = 0;
     public Animator animator;
+    bool isTyping = false;
 
+    GameObject usedTrigger;
     Coroutine coroutine;
     public IEnumerator waitAndWriteLetter(float delay, int index)
     {
@@ -42,11 +44,9 @@ public class DialogueManager : MonoBehaviour
         if(currentIndex == dividedLine.Length)
         {
             StopCoroutine(coroutine);
-            isTyping = false;
         }
     }
 
-    bool isTyping = false;
     private void Update()
     {
         if(lines != null)
@@ -74,8 +74,13 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(waitAndWriteLetter(0.2f, 0));
     }
 
-    public void StartDialogue(string dialogueNameWithExtention)
+    public void StartDialogue(string dialogueNameWithExtention, GameObject trig)
     {
+        if (isTyping)
+            return;
+        isTyping = true;
+        usedTrigger = trig;
+        usedTrigger.SetActive(false);
         panel.SetActive(true);
         string filePath = Application.streamingAssetsPath
                               + "/Dialogues/" + dialogueNameWithExtention;
@@ -85,9 +90,11 @@ public class DialogueManager : MonoBehaviour
 
     public void CloseDialogue()
     {
+        isTyping = false;
+        usedTrigger.SetActive(true);
         panel.SetActive(false);
-        dialogueText.text = "...";
-        nickText.text = "...";
+        dialogueText.text = "";
+        nickText.text = "";
         currentIndex = 0;
     }
 }
