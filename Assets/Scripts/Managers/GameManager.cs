@@ -1,7 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+
+public enum CurrentLevel
+{
+    level1, level2, level3, level4, level5
+}
+
+
 
 public class GameManager : MonoBehaviour
 {
@@ -9,9 +17,12 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public bool isGamePaused;
     public GameObject UIMenu;
+    public CurrentLevel currentLevel = CurrentLevel.level1;
+    public Dictionary<CurrentLevel,List<Vector3>> shadowFolowPathsDict;
     // Start is called before the first frame update\
     private void Awake()
     {
+        shadowFolowPathsDict = new Dictionary<CurrentLevel, List<Vector3>>();
         Instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
         UIMenu = GameObject.FindGameObjectWithTag("UIMenu");
@@ -55,6 +66,16 @@ public class GameManager : MonoBehaviour
     public GameObject GetPlayer()
     {
         return player;
+    }
+
+    public void SavePlayerPosition(Vector3 position)
+    {
+        if (!shadowFolowPathsDict.ContainsKey(currentLevel))
+        {
+            shadowFolowPathsDict.Add(currentLevel, new List<Vector3>());
+        }
+
+        shadowFolowPathsDict[currentLevel].Add(position);
     }
 
 }

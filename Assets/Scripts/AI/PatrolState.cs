@@ -52,6 +52,7 @@ public class PatrolState : State
 
     public override void ExitState(Enemy enemy)
     {
-        
+        enemy.previousState = enemy.patrol;
+
     }
 }

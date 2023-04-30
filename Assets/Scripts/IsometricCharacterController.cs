@@ -35,6 +35,19 @@ public class IsometricCharacterController : MonoBehaviour
     private Animator _animator;
     PickupObject closestPickUp;
 
+    [Header("Mirror")]
+    public Light MirrorPointLight;
+    public float LightMaxIntensity = 200;
+    public float LightIntensityDecrease = 200;
+    public float LightDimTime = 0.1f;
+    public int MirrorUsesLeft = 4;
+    public float MirrorStunTime = 3;
+    public float MirrorRadius;
+    public LayerMask TargetMask;
+    public Vector3 Offset;
+    public Vector3 Center { get { return this.transform.position + Offset; } }
+
+
     private bool _inMove;
     private bool _isDead = false;
     private bool _isSprinting;
@@ -44,9 +57,10 @@ public class IsometricCharacterController : MonoBehaviour
         InitializeEvents();
 
         _animator = this.GetComponent<Animator>();
+        MirrorPointLight.range = MirrorRadius * 1.25f;
+        playerLight = this.GetComponent<PlayerLight>();
 
         InvokeRepeating(nameof(RunEverySecondEvent), 0, 1f);
-        playerLight= this.GetComponent<PlayerLight>();
 
     }
     private void Update()
@@ -75,7 +89,8 @@ public class IsometricCharacterController : MonoBehaviour
         PickUp();
         MoveWASD();
         Look(ray);
-        
+        UseMirror();
+
 
 
     }
@@ -96,6 +111,7 @@ public class IsometricCharacterController : MonoBehaviour
     private void RunEverySecondEvent()
     {
         playerLight.ChangeCurrentIntensity(_isSprinting ? -playerLight.intensityTakenPerTick*3f : -playerLight.intensityTakenPerTick);
+        GameManager.Instance.SavePlayerPosition(this.transform.position);
         EverySecond?.Invoke();
     }
     private void InitializeEvents()
@@ -132,8 +148,8 @@ public class IsometricCharacterController : MonoBehaviour
     }
     private void Look(Ray ray)
     {
-
-            Plane plane = new Plane(Vector3.up, transform.position);
+        Debug.Log("Before rotation: " + transform.position.y);
+        Plane plane = new Plane(Vector3.up, transform.position);
 
             // Declare a variable to store the distance to the plane
             float distance;
@@ -148,10 +164,11 @@ public class IsometricCharacterController : MonoBehaviour
                 // Calculate the rotation needed to look at the mouse position
                 Quaternion rotation = Quaternion.LookRotation(mousePosition - transform.position);
 
-                // Smoothly rotate towards the mouse position
-
-                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, TurnSpeed * Time.deltaTime);
-            }
+            // Smoothly rotate towards the mouse position
+            
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, TurnSpeed * Time.deltaTime);
+            Debug.Log("After rotation: " + transform.position.y);
+        }
         
     }
     void MoveWASD()
@@ -169,18 +186,8 @@ public class IsometricCharacterController : MonoBehaviour
             {
                 inputMovement = MathF.Abs(angle) > 100 ? inputMovement.normalized * Speed * backwardsMovmentPenalty * Time.deltaTime : inputMovement.normalized * Speed* sprintMultiplyer * Time.deltaTime;
                 currentMoveSpeed = MathF.Abs(angle) > 100 ? Speed * backwardsMovmentPenalty : Speed*sprintMultiplyer;
-                int runningStateHash = Animator.StringToHash("Base Layer.Running");
-                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Running"))
-                {
-                    _animator.CrossFade("Running", 0.2f);
-
-                }
-                else
-                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk") && currentMoveSpeed < Speed)
-                {
-                    _animator.CrossFade("Walk", 0.1f);
-
-                }
+     
+               
             }
             else
             {
@@ -188,13 +195,20 @@ public class IsometricCharacterController : MonoBehaviour
                 currentMoveSpeed = MathF.Abs(angle) > 100 ? Speed * backwardsMovmentPenalty : Speed;
                 // _animator.SetBool("IsWalking", true);
                 //  _animator.SetBool("IsRunning", false);
-                if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk"))
-                {
-                    _animator.CrossFade("Walk", 0.2f);
-
-                }
+                
             }
-            
+
+            if (!_animator.GetNextAnimatorStateInfo(0).IsName("Running") && currentMoveSpeed > Speed)
+            {
+                _animator.CrossFade("Running", 0.1f);
+
+            }
+            else
+               if (!_animator.GetNextAnimatorStateInfo(0).IsName("Walk") && currentMoveSpeed <= Speed)
+            {
+                _animator.CrossFade("Walk", 0.1f);
+
+            }
 
             Quaternion rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
             Vector3 rotatedMovement = rotation * inputMovement;
@@ -209,7 +223,7 @@ public class IsometricCharacterController : MonoBehaviour
 
             _inMove = true;
              _animator.SetFloat("InputAngle", angle);
-            //_animator.SetFloat("MoveSpeed", currentMoveSpeed / Speed);
+            _animator.SetFloat("MoveSpeed", currentMoveSpeed / Speed);
 
 
 
@@ -277,6 +291,53 @@ public class IsometricCharacterController : MonoBehaviour
         }
 
         closestPickUp = null;
+    }
+
+    void UseMirror()
+    {
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (MirrorUsesLeft < 1)
+                return;
+            MirrorMeter.instance.ChangeMirrorUI();
+            MirrorPointLight.intensity = LightMaxIntensity;
+            MirrorUsesLeft--;
+            StartCoroutine(DimMirrorLigth());
+            Collider[] _targetsWithinDistance;
+            _targetsWithinDistance = Physics.OverlapSphere(Center, MirrorRadius, TargetMask);
+
+            if (_targetsWithinDistance.Length == 0)
+                return;
+
+            foreach (Collider target in _targetsWithinDistance)
+            {
+                Enemy enemy = target.GetComponent<Enemy>();
+                if (enemy != null)
+                {
+                    enemy.stunTime = MirrorStunTime;
+                    enemy.ChangeState(enemy.stun);
+                }
+            }
+
+        }
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, MirrorRadius);
+    }
+
+    IEnumerator DimMirrorLigth()
+    {
+        while (MirrorPointLight.intensity > 0.1f)
+        {
+            MirrorPointLight.intensity = Mathf.Clamp(MirrorPointLight.intensity - LightIntensityDecrease, 0f, LightMaxIntensity);
+            yield return new WaitForSeconds(LightDimTime);
+        }
+
     }
 
     public void TakeHit(float value)

@@ -37,13 +37,19 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public NavMeshAgent navMeshAgent;
     public Transform _floorPointer;
-    public List<Transform> _path;
+    public GameObject PathHeader;
+    [HideInInspector]
     public int _pathIndex;
+    [HideInInspector]
     public bool _forwardFlag;
+
+    [HideInInspector]
+    public List<Transform> _path;
     //states
     public State patrol;
     public State chase;
     public State attack;
+    public State stun;
     public bool HasDeathAnimation = true;
     [HideInInspector]
     public bool canSeePlayer = false;
@@ -61,6 +67,8 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public GameObject playerRef;
 
+    [HideInInspector]
+    public float stunTime = 3f;
 
     [Header("Chase")]
     [HideInInspector]
@@ -74,6 +82,8 @@ public class Enemy : MonoBehaviour
     protected AudioSource _audioSource;
     [HideInInspector]
     public MMConeOfVision coneOfVision;
+    [HideInInspector]
+    public State previousState;
 
 
     public static readonly int _walk = Animator.StringToHash("Walk");
@@ -92,7 +102,7 @@ public class Enemy : MonoBehaviour
         _attackValue = loadData.AttackValue;
         _attackRadius = loadData.AttackRadius;
         */
-
+        CreatePath();
         coneOfVision = GetComponent<MMConeOfVision>();
         currentState = patrol;
 
@@ -149,9 +159,17 @@ public class Enemy : MonoBehaviour
             canSeePlayer = false;
     }
     */
-    private void Update()
-    {
 
+    private void CreatePath()
+    {
+        Transform[] pathPointers =  GetComponentsInChildren<Transform>();
+        foreach(Transform tr in pathPointers)
+        {
+            if(tr != PathHeader.transform)
+            {
+                _path.Add(tr);
+            }
+        }
     }
 
     private void LateUpdate()

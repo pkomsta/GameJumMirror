@@ -34,7 +34,8 @@ public class ChaseState : State
 
 
         float distance = Vector3.Distance(enemy.lastSeenPos, enemy.transform.position);
-        if (distance < 0.2f && !enemy.canSeePlayer)
+        //Debug.Log("Distance " + distance + "enemy pos " + enemy.transform.position + " player pos " + enemy.lastSeenPos);
+        if (distance < 1.1f && !enemy.canSeePlayer)
         {
             enemy.ChangeState(enemy.patrol);
         }
@@ -42,6 +43,6 @@ public class ChaseState : State
 
     public override void ExitState(Enemy enemy)
     {
-
+        enemy.previousState = enemy.chase;
     }
 }
