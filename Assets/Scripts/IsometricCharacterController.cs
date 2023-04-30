@@ -309,13 +309,17 @@ public class IsometricCharacterController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
+
             if (GameManager.mirrorUsesLeft < 1)
                 return;
-            if(MirrorMeter.instance != null)
-                MirrorMeter.instance.ChangeMirrorUI();
-
+            
             if(LevelManager.GetActiveSceneBuildIndex() != 1)
+            {
                 GameManager.mirrorUsesLeft--;
+                if (MirrorMeter.instance != null)
+                    MirrorMeter.instance.ChangeMirrorUI();
+            }
+               
 
             MirrorPointLight.intensity = LightMaxIntensity;
             StartCoroutine(DimMirrorLigth());
