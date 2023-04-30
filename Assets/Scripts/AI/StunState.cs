@@ -9,13 +9,20 @@ public class StunState : State
     public override void StartState(Enemy enemy)
     {
         CancelInvoke();
-        if(enemy.coneOfVision!= null)
+        try
         {
-            MMConeOfVision cone = enemy.coneOfVision;
-            con = cone;
-            cone.MeshRenderer.enabled = false;
-            cone.enabled = false;
-            en.canSeePlayer = false;
+            if (enemy.coneOfVision != null)
+            {
+                MMConeOfVision cone = enemy.coneOfVision;
+                con = cone;
+                cone.MeshRenderer.enabled = false;
+                cone.enabled = false;
+                en.canSeePlayer = false;
+            }
+        }
+        catch(System.Exception e)
+        {
+            Debug.Log(e.Message);
         }
        
         en = enemy;
