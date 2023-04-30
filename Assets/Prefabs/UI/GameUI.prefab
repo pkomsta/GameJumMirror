@@ -67,7 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuList:
   - {fileID: 1715435939}
-  - {fileID: 0}
+  - {fileID: 409711354610227828}
 --- !u!1 &151889209
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +877,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 409711354610227828}
           m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_MethodName: SetActive
           m_Mode: 6
@@ -1673,6 +1673,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5235854213955417687, guid: bfa3b5b3f1e741441b236e6ad299631d, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 146847288}
+    - target: {fileID: 5235854213955417687, guid: bfa3b5b3f1e741441b236e6ad299631d, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1715435939}
+    - target: {fileID: 5235854213955417687, guid: bfa3b5b3f1e741441b236e6ad299631d, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideStroke
+      objectReference: {fileID: 0}
     - target: {fileID: 5703927222514325018, guid: bfa3b5b3f1e741441b236e6ad299631d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -1769,6 +1781,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7050141658511377830, guid: bfa3b5b3f1e741441b236e6ad299631d, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1715435939}
     - target: {fileID: 8236242178513105834, guid: bfa3b5b3f1e741441b236e6ad299631d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -1791,6 +1807,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfa3b5b3f1e741441b236e6ad299631d, type: 3}
+--- !u!1 &409711354610227828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1502588120822904874, guid: bfa3b5b3f1e741441b236e6ad299631d, type: 3}
+  m_PrefabInstance: {fileID: 1258146559302984286}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5217114164102878930 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6418539941648708748, guid: bfa3b5b3f1e741441b236e6ad299631d, type: 3}

@@ -25,6 +25,7 @@ public class MusicManager : MonoBehaviour
 
     List<AudioClip[]> musicLists;
     List<AudioClip[]> SFXLists;
+
     int lvlIndex;
 
     AudioClip[] selectedMusicList;
@@ -61,8 +62,29 @@ public class MusicManager : MonoBehaviour
         selectedSFXList = SFXLists[lvlIndex];
         StartCoroutine(PlayerRandomAmbient());
         StartCoroutine(PlayerRandomMusicClip());
+
     }
 
+    private void Update()
+    {
+       // TestRandomClip();
+
+    }
+
+    void TestRandomClip()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            int randomSFX = currentSFXClip;
+            while (randomSFX == currentSFXClip)
+            {
+                randomSFX = Random.Range(0, selectedSFXList.Length - 1);
+            }
+            Debug.Log("Clip index:" + randomSFX + " clip name " + selectedSFXList[randomSFX].name);
+            currentSFXClip = randomSFX;
+            SoundManager.Instance.PlaySFX(selectedSFXList[randomSFX]);
+        }
+    }
 
     IEnumerator PlayerRandomAmbient()
     {
@@ -70,10 +92,11 @@ public class MusicManager : MonoBehaviour
         float randomTime = Random.Range(minRange, maxRange);
         yield return new WaitForSeconds(randomTime);
         int randomSFX = currentSFXClip;
-        while (randomSFX == currentMusicClip)
+        while (randomSFX == currentSFXClip)
         {
             randomSFX = Random.Range(0, selectedSFXList.Length - 1);
         }
+        currentSFXClip = randomSFX;
         SoundManager.Instance.PlaySFX(selectedSFXList[randomSFX]);
         yield return new WaitUntil(()=> !SoundManager.Instance.IsSFXPlaying());
         Debug.Log("SFX has ended!");
@@ -90,6 +113,7 @@ public class MusicManager : MonoBehaviour
         {
             randomMusicClip = Random.Range(0, selectedMusicList.Length - 1);
         }
+        currentMusicClip = randomMusicClip;
         SoundManager.Instance.PlayMusic(selectedMusicList[randomMusicClip]);
         yield return new WaitUntil(() => !SoundManager.Instance.IsMusicPlaying());
         Debug.Log("Music has ended!");
