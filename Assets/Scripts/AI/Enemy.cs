@@ -79,7 +79,7 @@ public class Enemy : MonoBehaviour
     protected State currentState;
     protected bool IsDead = false;
     protected AudioSource _audioSource;
-    [HideInInspector]
+    //[HideInInspector]
     public MMConeOfVision coneOfVision;
     [HideInInspector]
     public State previousState;

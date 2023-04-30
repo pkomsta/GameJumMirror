@@ -47,7 +47,8 @@ public class DialogueManager : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
-                    NextLine();
+                    if(isTyping)
+                        NextLine();
                 }
             }
         }
