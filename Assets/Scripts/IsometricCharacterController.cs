@@ -314,8 +314,10 @@ public class IsometricCharacterController : MonoBehaviour
             if(MirrorMeter.instance != null)
                 MirrorMeter.instance.ChangeMirrorUI();
 
+            if(LevelManager.GetActiveSceneBuildIndex() != 1)
+                GameManager.mirrorUsesLeft--;
+
             MirrorPointLight.intensity = LightMaxIntensity;
-            GameManager.mirrorUsesLeft--;
             StartCoroutine(DimMirrorLigth());
             Collider[] _targetsWithinDistance;
             _targetsWithinDistance = Physics.OverlapSphere(Center, MirrorRadius, TargetMask);
