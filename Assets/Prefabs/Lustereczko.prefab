@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2536048415038311663}
   - component: {fileID: 348234922493605925}
   - component: {fileID: -5918164074089882583}
+  - component: {fileID: 1833350051}
   m_Layer: 0
   m_Name: Lustereczko
   m_TagString: Untagged
@@ -26,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2293970074957142512}
-  m_LocalRotation: {x: 0.7071069, y: 0, z: 0, w: 0.7071067}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 36.957138, y: -0.014824737, z: -52.462955}
-  m_LocalScale: {x: 56.185616, y: 40.83096, z: 56.185596}
+  m_LocalScale: {x: 224, y: 162, z: 224}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &2536048415038311663
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5df31976704190a429d817bb31a2103d, type: 2}
-  - {fileID: 2100000, guid: 2353d74570dfcd740a5bd70f4cee1707, type: 2}
+  - {fileID: 2100000, guid: 24db3058f12098c43a88dec0ff2c13d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,8 +94,20 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2293970074957142512}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.021284262, y: 0.019043814, z: 0.0011202241}
+  m_Size: {x: 0.021284262, y: 0.019043814, z: 0.004}
   m_Center: {x: -0.0005301092, y: 4.656613e-10, z: -0.00082396757}
+--- !u!114 &1833350051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2293970074957142512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f45dcfc7749084b9b30fbe947b2fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

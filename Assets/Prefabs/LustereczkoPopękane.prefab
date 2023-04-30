@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6211074750543553202}
   - component: {fileID: 7034042104628440343}
   - component: {fileID: 5078098092324297181}
+  - component: {fileID: 1359415171}
+  - component: {fileID: 1359415170}
   m_Layer: 0
   m_Name: "LustereczkoPop\u0119kane"
   m_TagString: Untagged
@@ -27,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6735690967476320264}
   m_LocalRotation: {x: 0, y: -0.92387956, z: 0, w: 0.38268343}
   m_LocalPosition: {x: 23.47, y: 1.54, z: -19.79}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 125.63, y: 125.63, z: 125.63}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,3 +86,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1359415171
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6735690967476320264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03526078, y: 0.028558686, z: 0.008}
+  m_Center: {x: 0.005387044, y: 0.0063316138, z: -0.0005550061}
+--- !u!114 &1359415170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6735690967476320264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f45dcfc7749084b9b30fbe947b2fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
