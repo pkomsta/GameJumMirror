@@ -18,9 +18,11 @@ public class GameManager : MonoBehaviour
     public static int mirrorUsesLeft = 4;
     public bool isGamePaused = false;  
     public bool isGameFrozen = false;
+    public bool isPlayerDead = false;
     public GameObject UIMenu;
     public CurrentLevel currentLevel = CurrentLevel.level1;
     public Dictionary<CurrentLevel,List<Vector3>> shadowFolowPathsDict;
+
     // Start is called before the first frame update\
     private void Awake()
     {
@@ -39,11 +41,13 @@ public class GameManager : MonoBehaviour
         shadowFolowPathsDict = new Dictionary<CurrentLevel, List<Vector3>>();
         player = GameObject.FindGameObjectWithTag("Player");
         UIMenu = GameObject.FindGameObjectWithTag("UIMenu");
+        isPlayerDead = false;
         isGamePaused = false;
     }
     void Start()
     {
-
+        isPlayerDead = false;
+        isGamePaused = false;
     }
 
     private void Update()
@@ -53,7 +57,7 @@ public class GameManager : MonoBehaviour
 
     private void CheckForPause()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && isPlayerDead == false)
         {
             PauseGame();
         }
@@ -79,6 +83,8 @@ public class GameManager : MonoBehaviour
             isGamePaused = false;
             Time.timeScale = 1.0f;
             UIMenu.SetActive(false);
+            UIMenu.GetComponent<HoverSelect>().HideStroke();
+
         }
         else
         {
@@ -87,6 +93,13 @@ public class GameManager : MonoBehaviour
             isGamePaused = true;
             Time.timeScale = 0f;
         }
+    }
+
+    public void PlayerDied()
+    {
+        isPlayerDead = true;
+        PauseGame();
+        UIMenu.GetComponent<GameUICleaner>().GameOverMenu.SetActive(true);
     }
 
     public GameObject GetPlayer()

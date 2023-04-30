@@ -65,9 +65,9 @@ public class IsometricCharacterController : MonoBehaviour
     }
     private void Update()
     {
-        if (_isDead)
+        if (playerLight.GetCurrentIntensity() <= 0f)
         {
-            playerLight.enabled = false;
+            KillPlayer();
             return;
         }
 
@@ -82,19 +82,6 @@ public class IsometricCharacterController : MonoBehaviour
             }
             return;
         }
-        if (playerLight.GetCurrentIntensity() <= 0f)
-        {
-            _isDead= true;
-            return;
-        }
-        if(_isDead)
-        {
-            _animator.SetBool("IsWalking", false);
-            _animator.SetBool("IsRunning", false);
-            _animator.CrossFade("Death",0.5f);
-            
-        }
-
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
        
         PickUp();
@@ -106,19 +93,7 @@ public class IsometricCharacterController : MonoBehaviour
 
     }
 
-    private void LateUpdate()
-    {
-        if (_isDead)
-        {
-            return;
-        }
-        if (playerLight.GetCurrentIntensity() <= 0f)
-        {
-            _isDead = true;
-            return;
-        }
-       // RotateCamera();
-    }
+ 
     private void RunEverySecondEvent()
     {
         if (GameManager.Instance.isGameFrozen)
@@ -367,9 +342,17 @@ public class IsometricCharacterController : MonoBehaviour
     {
         playerLight.ChangeCurrentIntensity(value);
     }
+
     public void KillPlayer()
     {
+        if (_isDead)
+        {
+            return;
+        }
         _isDead = true;
+        GameManager.Instance.PlayerDied();
+        _animator.CrossFade("Death", 0.1f);
+
     }
     public bool IsDead()
     {

@@ -7,7 +7,7 @@ public class GameUICleaner : MonoBehaviour
     [SerializeField]
     private List<GameObject> menuList;
 
-
+    public GameObject GameOverMenu;
     public void CleanMenus()
     {
         foreach(GameObject obj in menuList)
