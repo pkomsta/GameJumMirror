@@ -1,3 +1,4 @@
 {Tutorial}There are fireflies flying around there. Fireflies are being attracted to useful items, so it's good to look out for them.
 {Tutorial}Oil will help you refuel your lamp, while newspaper and other items will bring back some old memories.
+{Tutorial}Press E nearby items to interract with them.
 #END

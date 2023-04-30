@@ -1,3 +1,2 @@
-{Tutorial}There is enemy behind you! Better not let him see you!
-{Tutorial}Don't run too much though, running makes your flame run out faster too! Without it, you won't make it...
+{MC}I’m not going to look at it... I just can’t.
 #END

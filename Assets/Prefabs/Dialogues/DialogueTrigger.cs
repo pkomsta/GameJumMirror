@@ -9,7 +9,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            other.GetComponent<DialogueManager>().StartDialogue(dialogueName, this.gameObject);
+            DialogueManager.Instance.StartDialogue(dialogueName, this.gameObject);
         }
     }
 }
