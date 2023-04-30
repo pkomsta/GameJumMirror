@@ -9,7 +9,21 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText, nickText;
     public GameObject panel;
     private string[] lines;
+    private string[] dividedLine;
     private int currentIndex = 0;
+
+    public IEnumerator waitAndWriteLetter(float delay, int index)
+    {
+        dividedLine = lines[currentIndex].Split();
+        yield return new WaitForSeconds(delay);
+        lines[currentIndex] = dividedLine[index];
+        index++;
+        StartCoroutine(waitAndWriteLetter(0.2f, index));
+        if (lines[currentIndex].Length < dividedLine.Length)
+        {
+            StopCoroutine("waitAndWriteLetter");
+        }
+    }
 
     private void Update()
     {
@@ -35,8 +49,6 @@ public class DialogueManager : MonoBehaviour
                                           .Substring(start, end), "");
                 }
 
-                dialogueText.text = lines[currentIndex];
-
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     NextLine();
@@ -52,6 +64,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(string dialogueNameWithExtention)
     {
+        StartCoroutine(waitAndWriteLetter(0.2f, 0));
         panel.SetActive(true);
         string filePath = Application.streamingAssetsPath
                               + "/Dialogues/" + dialogueNameWithExtention;
