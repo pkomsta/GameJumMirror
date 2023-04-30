@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: dd1f2f4a663d2c34cbebf4f904aa773e
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 8fa3684a1bf471f43b1554e10c8a9df9
+  - enabled: 1
     path: Assets/Scenes/1poziom.unity
     guid: e771038ebf9c6bb459a19612d9493bd2
   - enabled: 1

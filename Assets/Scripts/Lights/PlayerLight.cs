@@ -18,7 +18,8 @@ public class PlayerLight : MonoBehaviour
     void Start()
     {
         currentIntensity = maxIntensity;
-        LightMeter.instance.SetMaxItensity(maxIntensity);
+        if(LightMeter.instance != null)
+            LightMeter.instance.SetMaxItensity(maxIntensity);
         StartCoroutine(Flicker());
     }
 
@@ -57,7 +58,8 @@ public class PlayerLight : MonoBehaviour
     public void ChangeCurrentIntensity(float value)
     {
         currentIntensity = Mathf.Clamp(currentIntensity+value,0f,maxIntensity);
-        LightMeter.instance.SetLightState(currentIntensity);
+        if(LightMeter.instance != null)
+            LightMeter.instance.SetLightState(currentIntensity);
     }
 
 }

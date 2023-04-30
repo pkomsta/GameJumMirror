@@ -7,7 +7,8 @@ public class SettingsHelper : MonoBehaviour
     public Slider MasterVolume;
     public Slider EffectVolume;
     public Slider MusicVolume;
-
+    public Toggle LightToggle;
+    public Toggle MirrorToggle;
     void Start()
     {
        // MasterVolume.value = SoundManager.Instance.masterVolume;
@@ -24,11 +25,37 @@ public class SettingsHelper : MonoBehaviour
         MasterVolume.value = SoundManager.Instance.masterVolume;
         EffectVolume.value = SoundManager.Instance.effectVolume;
         MusicVolume.value = SoundManager.Instance.musicVolume;
+        LightToggle.isOn = SettingsManager.GetLightUIState();
+        MirrorToggle.isOn = SettingsManager.GetMirrorUIState();
     }
 
-    public void SaveSliderValues()
+    public void SaveValues()
     {
         SoundManager.Instance.SaveVolumeSettings(MasterVolume.value, EffectVolume.value, MusicVolume.value);
+        if (MirrorToggle.isOn == false && LightToggle.isOn == false)
+        {
+            SettingsManager.DeactivateBorder();
+        }
+        if (LightToggle.isOn)
+        {
+            SettingsManager.ActivateLightUI();
+            SettingsManager.ActivateBorder();
+        }
+        else
+        {
+            SettingsManager.DeactivateLightUI();
+        }
+        if (MirrorToggle.isOn)
+        {
+            SettingsManager.ActivateMirrorUI();
+            SettingsManager.ActivateBorder();
+
+        }
+        else
+        {
+            SettingsManager.DeactivateMirrorUI();
+        }
+        
     }
 
     

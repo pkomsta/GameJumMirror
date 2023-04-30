@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public GameObject player;
+    public static int mirrorUsesLeft = 4;
     public bool isGamePaused = false;  
     public bool isGameFrozen = false;
     public GameObject UIMenu;
@@ -23,8 +24,19 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update\
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+
         shadowFolowPathsDict = new Dictionary<CurrentLevel, List<Vector3>>();
-        Instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
         UIMenu = GameObject.FindGameObjectWithTag("UIMenu");
         isGamePaused = false;

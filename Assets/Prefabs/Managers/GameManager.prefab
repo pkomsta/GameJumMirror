@@ -45,3 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  isGamePaused: 0
+  isGameFrozen: 0
+  UIMenu: {fileID: 0}
+  currentLevel: 0

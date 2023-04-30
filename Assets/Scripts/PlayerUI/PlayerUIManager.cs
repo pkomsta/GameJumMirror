@@ -12,17 +12,38 @@ public class PlayerUIManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
     }
 
     void Start()
     {
-        
+        Debug.Log("Start test");
+        if(SettingsManager.GetMirrorUIState() == false && SettingsManager.GetLightUIState() == false)
+        {
+            border.SetActive(false);
+            MirrorState.SetActive(false);
+            LightState.SetActive(false);
+        }
+        else if (SettingsManager.GetMirrorUIState() == false)
+        {
+            MirrorState.SetActive(false);
+        }
+        else if (SettingsManager.GetLightUIState() == false)
+        {
+            LightState.SetActive(false);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  
+    
 }
